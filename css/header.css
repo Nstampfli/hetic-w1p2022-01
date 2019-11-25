@@ -1,0 +1,118 @@
+/*HEADER*/
+
+* {
+  box-sizing: border-box;
+}
+
+.logo-tesla {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  width: 60%;
+  height: auto;
+}
+.photo-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  overflow: hidden;
+  transition: left 0.5s, top 0.5s, width 0.5s, height 0.5s;
+}
+
+.is-open {
+  left: 0;
+  top: 0;
+  width: 100vh;
+  height: 100vh;
+}
+
+.open-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  transition: background-color 0.3s;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  width: 30px;
+  height: 4px;
+  background: #fff;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  display: block;
+  transition: transform 0.3s;
+}
+
+.menu-icon::before {
+  transform: translateY(-8px);
+}
+
+.menu-icon::after {
+  transform: translateY(4px);
+}
+
+.is-open .menu-icon {
+  background-color: transparent;
+}
+
+.is-open .menu-icon::before {
+  transform: translateY(2px) rotate(45deg);
+}
+
+.is-open .menu-icon::after {
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+ul {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  transform: translate(-40vw, calc(-50vh + 40px)) scale(0);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.3s;
+}
+
+.is-open ul {
+  transform: none;
+  opacity: 1;
+}
+
+li {
+  font-style: uppercase;
+  font-family: sans-serif, Arial;
+  font-size: 30px;
+  padding: 15px;
+  color: #fff;
+}
