@@ -4,9 +4,16 @@ let form = document.querySelector("form");
 let overlay = document.querySelector(".form-overlay");
 let alertOk = document.querySelector(".alert-ok");
 let alertWrong = document.querySelector(".alert-wrong");
+let priceElement = document.querySelector(".prix");
+let checkBoxes = document.querySelectorAll(".checkbox");
+
+let originalPrice = 99990;
+let price = originalPrice;
 let result = false;
 
-let isValid = function(element, condition) {
+priceElement.innerHTML = price + " €";
+
+function isValid(element, condition) {
   var parent = element.parentNode;
   if (condition) {
     parent.classList.remove("is-not-valid");
@@ -17,7 +24,50 @@ let isValid = function(element, condition) {
     parent.classList.add("is-not-valid");
     result = false;
   }
-};
+}
+
+function resetForm(element) {
+  element.value = "";
+  element.parentNode.classList.remove("is-valid");
+}
+
+function resetCheckboxes() {
+  for (let checkbox of checkBoxes) {
+    checkbox.checked = false;
+    price = originalPrice;
+    priceElement.innerHTML = price + " €";
+    count = 0;
+  }
+}
+
+function calculPrice() {
+  for (let checkbox of checkBoxes) {
+    checkbox.addEventListener("click", function() {
+      if (checkbox.checked) {
+        price += Number(checkbox.getAttribute("data-price"));
+        priceElement.innerHTML = price + " €";
+      } else {
+        price -= Number(checkbox.getAttribute("data-price"));
+        priceElement.innerHTML = price + " €";
+      }
+    });
+  }
+
+  let olderPrice = 0;
+  document.querySelector("select").addEventListener("blur", function() {
+    price = price + Number(this.value) - olderPrice;
+    priceElement.innerHTML = price + " €";
+    olderPrice = Number(this.value);
+  });
+}
+calculPrice();
+
+let olderPrice = 0;
+document.querySelector("select").addEventListener("blur", function() {
+  price = price + Number(this.value) - olderPrice;
+  priceElement.innerHTML = price;
+  olderPrice = Number(this.value);
+});
 
 inputs.forEach(function(elt) {
   elt.addEventListener("blur", function() {
@@ -44,10 +94,8 @@ form.addEventListener("submit", function(e) {
     for (let i of inputs) {
       resetForm(i);
     }
-
     resetForm(mail);
-
-    document.querySelector("textarea").value = "";
+    resetCheckboxes();
   } else {
     overlay.style.display = "flex";
     alertWrong.style.display = "block";

@@ -30,7 +30,7 @@
             <input
               class="blur-verif"
               type="text"
-              name="mail"
+              name="name"
               placeholder="Nom Prenom"
             />
             <div class="help-text">Veuillez saisir votre nom</div>
@@ -49,10 +49,10 @@
           <h2>Choix Techniques</h2>
           <div>
             <select class="select-puissance blur-verif">
-              <option value="">Puissance du moteur</option>
-              <option value="hight">Elevée</option>
-              <option value="middle">Moyenne</option>
-              <option value="normal">Normale</option>
+              <option value="" data-price="0">Puissance du moteur</option>
+              <option value="20000">Elevée</option>
+              <option value="10000">Moyenne</option>
+              <option value="0">Normale</option>
             </select>
 
             <div class="help-text">
@@ -77,6 +77,7 @@
               type="checkbox"
               id="pilote-auto"
               name="pilote-auto"
+              data-price="15000"
             />
             <label for="pilote-auto">Navigation autonome</label><br />
             <input
@@ -84,12 +85,14 @@
               type="checkbox"
               id="distance-controle"
               name="distance-controle"
+              data-price="15000"
             /><label for="istance-controle">Contrôle à distance</label><br />
             <input
               class="checkbox"
               type="checkbox"
               id="alarm"
               name="alarm"
+              data-price="5000"
             /><label for="alarm">Système d'alarme</label><br />
 
             <input
@@ -97,20 +100,27 @@
               type="checkbox"
               id="champagne"
               name="champagne"
+              data-price="1000"
             /><label for="champagne">Kit à champagne</label><br />
             <input
               class="checkbox"
               type="checkbox"
               id="assitance"
               name="assistance"
+              data-price="5000"
             /><label for="assistance">Assistance VIP</label><br />
             <input
               class="checkbox"
               type="checkbox"
               id="carte-vip"
               name="carte-vip"
+              data-price="3000"
             /><label for="carte-vip">Carte de membre</label>
           </div>
+        </div>
+        <div class="prix-total">
+          <h2>PRIX :</h2>
+          <span class="prix"></span>
         </div>
         <input class="submit" type="submit" value="Passer la commande" />
       </form>

@@ -50,6 +50,7 @@ form {
   width: 70%;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .info-perso {
@@ -131,6 +132,12 @@ form {
 
 .is-not-valid .help-text {
   display: block;
+}
+
+.prix-total {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .submit {
