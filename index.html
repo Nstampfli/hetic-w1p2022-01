@@ -6,7 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <title>Tesla arch-E-mede</title>
   </head>
-  <body></body>
+  <body>
+    <hr class="separation" />
+    <section class="form-section">
+      <div class="form-overlay">
+        <p class="alert-ok">
+          <span>Votre commande a bien été prise en compte :)</span>
+        </p>
+        <p class="alert-wrong">
+          <span
+            >•ERROR• <br />
+            Veuillez vérifier la bonne saisie de vos données</span
+          >
+        </p>
+      </div>
+      <form>
+        <div class="info-perso">
+          <h2>Vos informations</h2>
+          <div class="name">
+            <input
+              class="blur-verif"
+              type="text"
+              name="mail"
+              placeholder="Nom Prenom"
+            />
+            <div class="help-text">Veuillez saisir votre nom</div>
+          </div>
+          <div class="mail">
+            <input
+              class="regex-verif"
+              type="email"
+              name="mail"
+              placeholder="Adresse mail"
+            />
+            <div class="help-text">Veuillez saisir une adresse mail valide</div>
+          </div>
+        </div>
+        <div class="caracteristiques">
+          <h2>Choix Techniques</h2>
+          <div>
+            <select class="select-puissance blur-verif">
+              <option value="">Puissance du moteur</option>
+              <option value="hight">Elevée</option>
+              <option value="middle">Moyenne</option>
+              <option value="normal">Normale</option>
+            </select>
+
+            <div class="help-text">
+              Veuillez choisir le moteur de votre choix
+            </div>
+          </div>
+          <div class="color-choice">
+            <h3>Couleur du bateau</h3>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+            </div>
+            <div class="help-text">Veuillez choisir une couleur</div>
+          </div>
+          <div class="option-checkbox">
+            <h3>Options</h3>
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="pilote-auto"
+              name="pilote-auto"
+            />
+            <label for="pilote-auto">Navigation autonome</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="distance-controle"
+              name="distance-controle"
+            /><label for="istance-controle">Contrôle à distance</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="alarm"
+              name="alarm"
+            /><label for="alarm">Système d'alarme</label><br />
+
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="champagne"
+              name="champagne"
+            /><label for="champagne">Kit à champagne</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="assitance"
+              name="assistance"
+            /><label for="assistance">Assistance VIP</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="carte-vip"
+              name="carte-vip"
+            /><label for="carte-vip">Carte de membre</label>
+          </div>
+        </div>
+        <input class="submit" type="submit" value="Passer la commande" />
+      </form>
+    </section>
+    <script type="text/javascript" src="JS/form.js"></script>
+  </body>
 </html>
