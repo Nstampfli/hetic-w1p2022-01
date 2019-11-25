@@ -1,6 +1,8 @@
 # hetic-w1p2022-01 Projet Semaine Intensive Intégration
 
-<ul>Membres du groupe :
+Membres du groupe :
+
+<ul>
   <li>Bastien Paquier</li>
   <li>Constance Pétillot</li>
   <li>Guillaume Rak-Lecler</li>
