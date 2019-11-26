@@ -6,7 +6,152 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <title>Tesla arch-E-mede</title>
   </head>
-  <body></body>
+  <body>
+    <hr class="separation" />
+    <section class="form-section">
+      <div class="form-overlay">
+        <p class="alert-ok">
+          <span>Votre commande a bien été prise en compte :)</span>
+        </p>
+        <p class="alert-wrong">
+          <span
+            >•ERROR• <br />
+            Veuillez vérifier la bonne saisie de vos données</span
+          >
+        </p>
+      </div>
+      <form>
+        <div class="info-perso">
+          <h2>Vos informations</h2>
+          <div class="name">
+            <input
+              class="blur-verif"
+              type="text"
+              name="name"
+              placeholder="Nom Prenom"
+            />
+            <img
+              class="invalid-symbole symbole-name"
+              src="img/invalid-icone.png"
+            />
+            <img class="valid-symbole symbole-name" src="img/valid-icone.png" />
+            <div class="help-text">Veuillez saisir votre nom</div>
+          </div>
+          <div class="mail">
+            <input
+              class="regex-verif"
+              type="email"
+              name="mail"
+              placeholder="Adresse mail"
+            />
+            <img
+              class="invalid-symbole symbole-mail"
+              src="img/invalid-icone.png"
+            />
+            <img class="valid-symbole symbole-mail" src="img/valid-icone.png" />
+            <div class="help-text">Veuillez saisir une adresse mail valide</div>
+          </div>
+        </div>
+        <div class="caracteristiques">
+          <div>
+            <label for="select-puissance">Choisir la puissance du moteur</label
+            ><br />
+            <div class="select-div">
+              <select class="select-puissance blur-verif" id="select-puissance">
+                <option value="" data-price="0">Puissance du moteur</option>
+                <option value="20000"
+                  ><strong>Elevée</strong> - Max 40nds <stron>+20000€</stron>
+                </option>
+                <option value="10000"
+                  ><strong>Moyenne</strong> - Max 30nds
+                  <stron>+10000€</stron></option
+                >
+                <option value="0">
+                  <strong>Classique</strong> - Max 20nds</option
+                >
+              </select>
+              <img
+                class="invalid-symbole symbole-select"
+                src="img/invalid-icone.png"
+              />
+              <img
+                class="valid-symbole symbole-select"
+                src="img/valid-icone.png"
+              />
+              <div class="help-text">
+                Veuillez choisir un moteur
+              </div>
+            </div>
+          </div>
+          <div class="color-choice">
+            <h3>Couleur du bateau</h3>
+            <div class="colors" name>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+            </div>
+            <div class="help-text">Veuillez choisir une couleur</div>
+          </div>
+          <div class="option-checkbox">
+            <h3>Options</h3>
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="pilote-auto"
+              name="pilote-auto"
+              data-price="15000"
+            />
+            <label for="pilote-auto">Navigation autonome</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="distance-controle"
+              name="distance-controle"
+              data-price="15000"
+            /><label for="istance-controle">Contrôle à distance</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="alarm"
+              name="alarm"
+              data-price="5000"
+            /><label for="alarm">Système d'alarme</label><br />
+
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="champagne"
+              name="champagne"
+              data-price="1000"
+            /><label for="champagne">Kit à champagne</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="assitance"
+              name="assistance"
+              data-price="5000"
+            /><label for="assistance">Assistance VIP</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="carte-vip"
+              name="carte-vip"
+              data-price="3000"
+            /><label for="carte-vip">Carte de membre</label>
+          </div>
+        </div>
+        <div class="prix-total">
+          <h2>PRIX :</h2>
+          <span class="prix"></span>
+        </div>
+        <input class="submit" type="submit" value="Passer la commande" />
+      </form>
+    </section>
+    <script type="text/javascript" src="JS/form.js"></script>
+  </body>
 </html>
