@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <title>Tesla arch-E-mede</title>
     <script defer type="text/javascript" src="./js/header.js"></script>
   </head>
   <body>
-    <header>
+     <header>
       <img
         class="photo-header"
         alt="photo arch-e-mede en mer"
@@ -33,5 +35,190 @@
       </div>
       <img class="logo-arch" alt="logo-arch-e-mede" src="img/logo-arch.jpg" />
     </header>
+    <hr class="separation" />
+    <section class="form-section">
+      <div class="form-overlay">
+        <p class="alert-ok">
+          <span>Votre commande a bien été prise en compte :)</span>
+        </p>
+        <p class="alert-wrong">
+          <span
+            >•ERROR• <br />
+            Veuillez vérifier la bonne saisie de vos données</span
+          >
+        </p>
+      </div>
+      <form>
+        <div class="info-perso">
+          <h2>Vos informations</h2>
+          <div class="name">
+            <input
+              class="blur-verif"
+              type="text"
+              name="name"
+              placeholder="Nom Prenom"
+            />
+            <img
+              class="invalid-symbole symbole-name"
+              src="img/invalid-icone.png"
+            />
+            <img class="valid-symbole symbole-name" src="img/valid-icone.png" />
+            <div class="help-text">Veuillez saisir votre nom</div>
+          </div>
+          <div class="mail">
+            <input
+              class="regex-verif"
+              type="email"
+              name="mail"
+              placeholder="Adresse mail"
+            />
+            <img
+              class="invalid-symbole symbole-mail"
+              src="img/invalid-icone.png"
+            />
+            <img class="valid-symbole symbole-mail" src="img/valid-icone.png" />
+            <div class="help-text">Veuillez saisir une adresse mail valide</div>
+          </div>
+        </div>
+        <div class="caracteristiques">
+          <div>
+            <label for="select-puissance">Choisir la puissance du moteur</label
+            ><br />
+            <div class="select-div">
+              <select class="select-puissance blur-verif" id="select-puissance">
+                <option value="" data-price="0">Puissance du moteur</option>
+                <option value="20000"
+                  ><strong>Elevée</strong> - Max 40nds <stron>+20000€</stron>
+                </option>
+                <option value="10000"
+                  ><strong>Moyenne</strong> - Max 30nds
+                  <stron>+10000€</stron></option
+                >
+                <option value="0">
+                  <strong>Classique</strong> - Max 20nds</option
+                >
+              </select>
+              <img
+                class="invalid-symbole symbole-select"
+                src="img/invalid-icone.png"
+              />
+              <img
+                class="valid-symbole symbole-select"
+                src="img/valid-icone.png"
+              />
+              <div class="help-text">
+                Veuillez choisir un moteur
+              </div>
+            </div>
+          </div>
+          <div class="color-choice">
+            <h3>Couleur du bateau</h3>
+            <div class="colors" name>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+            </div>
+            <div class="help-text">Veuillez choisir une couleur</div>
+          </div>
+          <div class="option-checkbox">
+            <h3>Options</h3>
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="pilote-auto"
+              name="pilote-auto"
+              data-price="15000"
+            />
+            <label for="pilote-auto">Navigation autonome</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="distance-controle"
+              name="distance-controle"
+              data-price="15000"
+            /><label for="istance-controle">Contrôle à distance</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="alarm"
+              name="alarm"
+              data-price="5000"
+            /><label for="alarm">Système d'alarme</label><br />
+
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="champagne"
+              name="champagne"
+              data-price="1000"
+            /><label for="champagne">Kit à champagne</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="assitance"
+              name="assistance"
+              data-price="5000"
+            /><label for="assistance">Assistance VIP</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="carte-vip"
+              name="carte-vip"
+              data-price="3000"
+            /><label for="carte-vip">Carte de membre</label>
+          </div>
+        </div>
+        <div class="prix-total">
+          <h2>PRIX :</h2>
+          <span class="prix"></span>
+        </div>
+        <input class="submit" type="submit" value="Passer la commande" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class=" footertext">
+        <ul class="footerbox">
+          <li>
+            <a class="lien" href="https://www.tesla.com/fr_FR/about/legal"
+              >Mentions légales</a
+            >
+          </li>
+          <li>
+            <a class="lien" href="https://www.tesla.com/fr_FR/contact"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a class="lien" href="https://www.tesla.com/fr_FR/updates"
+              >Newsletter</a
+            >
+          </li>
+          <li>
+            <a
+              class="lien"
+              href="http://www.tesla-mag.com/forum/phpBB3/viewforum.php?f=48"
+              >Forum</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footerbox footersocial">
+        <a href="https://www.instagram.com/teslamotors/?hl=fr">
+          <img class="footerlogo" src="img/logoinsta.png" alt=""
+        /></a>
+        <a href="https://twitter.com/tesla?lang=fr"
+          ><img class="footerlogo" src="img/logotwitter.png" alt=""
+        /></a>
+        <a href="https://www.facebook.com/TeslaMoto/"
+          ><img class="footerlogo" src="img/logofb.png" alt=""
+        /></a>
+        <a href="https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ">
+          <img class="footerlogo" src="img/logoytb.png" alt="" />
+        </a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="JS/form.js"></script>
   </body>
 </html>
