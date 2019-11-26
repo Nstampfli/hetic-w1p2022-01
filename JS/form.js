@@ -36,7 +36,6 @@ function resetCheckboxes() {
     checkbox.checked = false;
     price = originalPrice;
     priceElement.innerHTML = price + " €";
-    count = 0;
   }
 }
 
@@ -60,14 +59,8 @@ function calculPrice() {
     olderPrice = Number(this.value);
   });
 }
-calculPrice();
 
-let olderPrice = 0;
-document.querySelector("select").addEventListener("blur", function() {
-  price = price + Number(this.value) - olderPrice;
-  priceElement.innerHTML = price;
-  olderPrice = Number(this.value);
-});
+calculPrice();
 
 inputs.forEach(function(elt) {
   elt.addEventListener("blur", function() {
@@ -96,7 +89,7 @@ form.addEventListener("submit", function(e) {
     }
     resetForm(mail);
     resetCheckboxes();
-  } else {
+  } else if (!result) {
     overlay.style.display = "flex";
     alertWrong.style.display = "block";
 
@@ -112,3 +105,5 @@ form.addEventListener("submit", function(e) {
     }, 3000);
   }
 });
+
+console.log(result);

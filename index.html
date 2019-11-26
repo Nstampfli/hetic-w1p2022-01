@@ -33,6 +33,11 @@
               name="name"
               placeholder="Nom Prenom"
             />
+            <img
+              class="invalid-symbole symbole-name"
+              src="img/invalid-icone.png"
+            />
+            <img class="valid-symbole symbole-name" src="img/valid-icone.png" />
             <div class="help-text">Veuillez saisir votre nom</div>
           </div>
           <div class="mail">
@@ -42,26 +47,48 @@
               name="mail"
               placeholder="Adresse mail"
             />
+            <img
+              class="invalid-symbole symbole-mail"
+              src="img/invalid-icone.png"
+            />
+            <img class="valid-symbole symbole-mail" src="img/valid-icone.png" />
             <div class="help-text">Veuillez saisir une adresse mail valide</div>
           </div>
         </div>
         <div class="caracteristiques">
-          <h2>Choix Techniques</h2>
           <div>
-            <select class="select-puissance blur-verif">
-              <option value="" data-price="0">Puissance du moteur</option>
-              <option value="20000">Elevée</option>
-              <option value="10000">Moyenne</option>
-              <option value="0">Normale</option>
-            </select>
-
-            <div class="help-text">
-              Veuillez choisir le moteur de votre choix
+            <label for="select-puissance">Choisir la puissance du moteur</label
+            ><br />
+            <div class="select-div">
+              <select class="select-puissance blur-verif" id="select-puissance">
+                <option value="" data-price="0">Puissance du moteur</option>
+                <option value="20000"
+                  ><strong>Elevée</strong> - Max 40nds <stron>+20000€</stron>
+                </option>
+                <option value="10000"
+                  ><strong>Moyenne</strong> - Max 30nds
+                  <stron>+10000€</stron></option
+                >
+                <option value="0">
+                  <strong>Classique</strong> - Max 20nds</option
+                >
+              </select>
+              <img
+                class="invalid-symbole symbole-select"
+                src="img/invalid-icone.png"
+              />
+              <img
+                class="valid-symbole symbole-select"
+                src="img/valid-icone.png"
+              />
+              <div class="help-text">
+                Veuillez choisir un moteur
+              </div>
             </div>
           </div>
           <div class="color-choice">
             <h3>Couleur du bateau</h3>
-            <div class="colors">
+            <div class="colors" name>
               <div class="color"></div>
               <div class="color"></div>
               <div class="color"></div>
