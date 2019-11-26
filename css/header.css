@@ -103,7 +103,7 @@ header {
   transform: translateY(-2px) rotate(-45deg);
 }
 
-.menu-items {
+.menu-list {
   position: fixed;
   left: 0;
   top: 0;
@@ -119,13 +119,13 @@ header {
   transition: transform 0.5s, opacity 0.3s;
 }
 
-.is-open .menu-items {
+.is-open .menu-list {
   transform: none;
   opacity: 0.8;
   background-color: #ccc;
 }
 
-li {
+.menu-items {
   font-style: uppercase;
   font-family: sans-serif, Arial;
   font-size: 30px;
