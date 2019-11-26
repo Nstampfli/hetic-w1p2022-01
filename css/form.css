@@ -1,5 +1,4 @@
 .form-section {
-  position: relative;
   width: 100%;
   height: 670px;
   display: flex;
@@ -11,7 +10,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 20;
+  z-index: 1;
   padding: 0 20px;
   width: 100%;
   height: 100%;
@@ -109,6 +108,7 @@ select {
 .colors .color-li {
   display: flex;
   width: 20%;
+  max-width: 50px;
 }
 
 .color-sample {

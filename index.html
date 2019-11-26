@@ -15,28 +15,28 @@
     <script defer type="text/javascript" src="js/header.js"></script>
   </head>
   <body>
-    <header>
-      <img
-        class="photo-header"
-        alt="photo arch-e-mede en mer"
-        src="img/boat in mouvement.jpg"
-      />
+    <header id="up">
       <div class="header-wrapper">
+       
         <nav id="menu" class="menu">
-          <ul class="menu-list">
-            <li class="menu-items">Description</li>
-            <li class="menu-items">Technologie</li>
-            <li class="menu-items">Commandez</li>
-            <li class="menu-items">Actualités</li>
+          <ul class="menu-list open-close">
+            <li class="menu-items"><a class="lien-menu" href="#">Description</a></li>
+            <li class="menu-items"><a class="lien-menu" href="#">Technologie</a></li>
+            <li class="menu-items"><a class="lien-menu" href="#">Commandez</a></li>
+            <li class="menu-items"><a class="lien-menu" href="#">Actualités</a></li>
           </ul>
-          <div id="open-menu" class="open-menu">
+          <div id="open-menu" class="open-menu open-close">
             <div id="menu-icon" class="menu-icon"></div>
           </div>
         </nav>
-        <img class="logo-tesla" alt="logo-tesla" src="img/logo-tesla.png" />
+      
+      
+        <a href="#up" class="logo-tesla"><img  alt="logo-tesla" src="img/logo-tesla.png" /></a>
       </div>
       <img class="logo-arch" alt="logo-arch-e-mede" src="img/logo-arch.jpg" />
+      <a class="buy-button" href="#order"><span>ORDER NOW</span></a>
     </header>
+
     <section class="techno">
       <div class="techno-wrapper">
         <div class="techno-image"> <img class="techno-image-content" src="img/boatautopilot.jpg" alt=""></div>
@@ -67,13 +67,14 @@
 
 
     </section>
+
     <section class="descritpion-wrapper">
       <div class="descritpion-image">
 
       </div>
     </section>
     <hr class="separation" />
-    <section class="form-section">
+    <section class="form-section" id="order">
       <div class="form-overlay">
         <p class="alert-ok">
           <span>Votre commande a bien été prise en compte :)</span>
