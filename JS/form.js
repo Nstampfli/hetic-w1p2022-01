@@ -6,10 +6,12 @@ let alertOk = document.querySelector(".alert-ok");
 let alertWrong = document.querySelector(".alert-wrong");
 let priceElement = document.querySelector(".prix");
 let checkBoxes = document.querySelectorAll(".checkbox");
+let colors = document.querySelectorAll(".color-sample");
 
 let originalPrice = 99990;
 let price = originalPrice;
 let result = false;
+let memo;
 
 priceElement.innerHTML = price + " €";
 
@@ -71,6 +73,20 @@ inputs.forEach(function(elt) {
 mail.addEventListener("blur", function() {
   isValid(mail, /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i.test(mail.value));
 });
+
+for (let color of colors) {
+  let parent = color.parentNode;
+  color.addEventListener("click", function() {
+    if (!memo) {
+      parent.classList.add("is-selected");
+      memo = parent;
+    } else {
+      memo.classList.remove("is-selected");
+      parent.classList.add("is-selected");
+      memo = parent;
+    }
+  });
+}
 
 form.addEventListener("submit", function(e) {
   e.preventDefault();
