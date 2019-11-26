@@ -106,7 +106,7 @@ select {
   justify-content: space-between;
   margin-top: 10px;
 }
-.colors li {
+.colors .color-li {
   display: flex;
   width: 20%;
 }

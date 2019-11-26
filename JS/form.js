@@ -11,7 +11,8 @@ let colors = document.querySelectorAll(".color-sample");
 let originalPrice = 99990;
 let price = originalPrice;
 let result = false;
-let memo;
+let memo = document.querySelector(".is-selected");
+let colorChoice = false;
 
 priceElement.innerHTML = price + " €";
 
@@ -77,14 +78,9 @@ mail.addEventListener("blur", function() {
 for (let color of colors) {
   let parent = color.parentNode;
   color.addEventListener("click", function() {
-    if (!memo) {
-      parent.classList.add("is-selected");
-      memo = parent;
-    } else {
-      memo.classList.remove("is-selected");
-      parent.classList.add("is-selected");
-      memo = parent;
-    }
+    memo.classList.remove("is-selected");
+    parent.classList.add("is-selected");
+    memo = parent;
   });
 }
 
@@ -121,5 +117,3 @@ form.addEventListener("submit", function(e) {
     }, 3000);
   }
 });
-
-console.log(result);
