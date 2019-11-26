@@ -1,0 +1,24 @@
+.footer {
+  background-color: rgb(35, 35, 35);
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lien {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+.footerbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+
+.footerlogo {
+  width: 35px;
+  height: auto;
+}
