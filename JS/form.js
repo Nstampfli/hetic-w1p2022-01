@@ -7,6 +7,8 @@ let alertWrong = document.querySelector(".alert-wrong");
 let priceElement = document.querySelector(".prix");
 let checkBoxes = document.querySelectorAll(".checkbox");
 let colors = document.querySelectorAll(".color-sample");
+let colorSelected = document.querySelectorAll(".color-li");
+let boatColors = document.querySelectorAll(".boat-color");
 
 let originalPrice = 99990;
 let price = originalPrice;
@@ -75,14 +77,22 @@ mail.addEventListener("blur", function() {
   isValid(mail, /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i.test(mail.value));
 });
 
-for (let color of colors) {
-  let parent = color.parentNode;
-  color.addEventListener("click", function() {
+for (let i = 0; i < colors.length; i++) {
+  let parent = colors[i].parentNode;
+  colors[i].addEventListener("click", function() {
     memo.classList.remove("is-selected");
     parent.classList.add("is-selected");
     memo = parent;
+    for (let j = 0; j < boatColors.length; j++) {
+      boatColors[j].classList.toggle(
+        "visible",
+        colorSelected[j].classList.contains("is-selected")
+      );
+    }
   });
 }
+
+colors;
 
 form.addEventListener("submit", function(e) {
   e.preventDefault();
