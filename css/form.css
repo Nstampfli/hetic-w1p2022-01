@@ -98,20 +98,30 @@ select {
 
 .color-choice {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .colors {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 10px;
 }
-.colors div {
-  width: 10%;
-  height: 20px;
-  border: 1px solid black;
+.colors li {
+  display: flex;
+  width: 20%;
 }
 
+.color-sample {
+  width: 100%;
+  margin: auto;
+}
 .option-checkbox {
   margin-top: 10px;
+}
+
+.is-selected {
+  border: 4px solid black;
+  border-radius: 50%;
 }
 
 .option-checkbox:nth-child(2) {
