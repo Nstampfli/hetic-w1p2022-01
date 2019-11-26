@@ -3,9 +3,8 @@ body {
 }
 
 article {
-  background: white;
+  background: whitesmoke;
   margin: 10%;
-  margin-right: 5%;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -34,6 +33,7 @@ h3 {
   font-size: 20px;
   font-weight: bold;
   padding: 20px;
+  margin-top: 20px;
 }
 .conteneur {
   float: right;
@@ -50,11 +50,28 @@ h3 {
 p {
   text-align: justify;
 }
+
+@media (min-width: 1210px) {
+  .ballast {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1210px) {
+  .sonore {
+    clear: both;
+  }
+}
+
 .cargoSolaire {
   float: left;
-  margin: 10px;
-  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+.conclusion {
+  clear: both;
+  margin-top: 20px;
+}
+
 .auteurs {
   position: absolute;
   font-size: 12px;
