@@ -137,7 +137,7 @@ form h1 {
 }
 
 .is-selected {
-  border: 3px solid rgb(11, 177, 163);
+  border: 2px solid #c4c4c4b2;
   border-radius: 50%;
 }
 
