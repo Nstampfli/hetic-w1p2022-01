@@ -26,10 +26,10 @@
               <a class="lien-menu" href="#">Description</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#">Technologie</a>
+              <a class="lien-menu" href="#techno">Technologie</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#">Commandez</a>
+              <a class="lien-menu" href="#order">Commandez</a>
             </li>
             <li class="menu-items">
               <a class="lien-menu" href="#">Actualités</a>
@@ -45,7 +45,7 @@
         /></a>
       </div>
     </header>
-    <section class="techno">
+    <section class="techno" id="techno">
       <div class="techno-wrapper">
         <div class="techno-image">
           <img
@@ -132,16 +132,14 @@
     <section class="form-section" id="order">
       <div class="form-overlay">
         <p class="alert-ok">
-          <span>Votre commande a bien été prise en compte :)</span>
+          <span>Merci de votre commande</span>
         </p>
         <p class="alert-wrong">
-          <span
-            >•ERROR• <br />
-            Veuillez vérifier la bonne saisie de vos données</span
-          >
+          <span>Merci d'indiquer une adresse mail</span>
         </p>
       </div>
       <form>
+        <h1>PRECOMMANDE</h1>
         <div class="info-perso">
           <h2>Vos informations</h2>
 
@@ -163,14 +161,14 @@
         <div class="caracteristiques">
           <h2>Puissance du moteur</h2>
           <div class="select-puissance blur-verif" id="select-puissance">
-            <div class="puissance-moteur" data-price="20000">
-              Elevée - Max 40nds + 20000€
+            <div class="puissance-moteur moteur-selected" data-price="0">
+              Single Super Motor - Max 20nds
             </div>
             <div class="puissance-moteur" data-price="10000">
-              Moyenne - Max 30nds + 10000€
+              <span>Duo Super Motor - Max 30nds</span> <span>+ 10000€</span>
             </div>
-            <div class="puissance-moteur" data-price="0">
-              Classique - Max 20nds
+            <div class="puissance-moteur" data-price="20000">
+              <span>Tri Super Motor - Max 40nds</span> <span>+ 20000€</span>
             </div>
           </div>
 
@@ -220,7 +218,7 @@
           <h2>PRIX :</h2>
           <span class="prix"></span>
         </div>
-        <input class="submit" type="submit" data-price="Passer la commande" />
+        <button class="boutton-commande">PRECOMMANDER</button>
       </form>
       <div class="color-img-big-device">
         <div class="colors-img">
