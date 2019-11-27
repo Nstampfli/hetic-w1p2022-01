@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .separation {
   width: 50%;
   height: 3px;
