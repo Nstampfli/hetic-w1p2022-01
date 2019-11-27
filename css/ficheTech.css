@@ -1,13 +1,15 @@
 .technique-title {
   margin-top: 10%;
   margin-bottom: 5%;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .ficheTech {
   width: 100%;
 }
 .technique {
-  width: 80%;
+  width: 95%;
 }
 
 .tech-flex-img {
@@ -43,7 +45,7 @@
   }
 
   .ficheTech {
-    width: 50%;
+    width: 80%;
   }
 
   .technique-flexbox-img {
@@ -52,8 +54,8 @@
 
   .tech-flex-img {
     display: flex;
-    width: 60%;
-    margin-top: 30%;
+    width: 80%;
+    margin-top: 50%;
     margin-left: 25%;
   }
 }
