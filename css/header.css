@@ -167,23 +167,26 @@ header {
   align-self: center;
   position: absolute;
   width: 60%;
+  min-width: 255px;
   max-width: 400px;
-  height: 40px;
+  height: 50px;
   bottom: 10%;
   text-align: center;
   text-decoration: none;
-  color: black;
-  background-color: white;
-  border-radius: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 6px solid white;
 }
 
 .buy-button:hover {
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .buy-button span {
   margin: auto;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: 5px;
   font-weight: bolder;
 }

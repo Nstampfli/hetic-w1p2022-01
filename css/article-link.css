@@ -109,9 +109,9 @@
 
 @media screen and (min-width: 400px) {
   .article-presentation-image {
-    max-width: 962px;
-    height: auto;
-    max-height: 513px;
+    max-width: 907px;
+    height: 550px;
+    overflow: hidden;
   }
 }
 
