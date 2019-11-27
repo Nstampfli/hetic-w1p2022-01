@@ -8,11 +8,14 @@ let colors = document.querySelectorAll(".color-sample");
 let colorSelected = document.querySelectorAll(".color-li");
 let boatColors = document.querySelectorAll(".boat-color");
 let bigBoatsColors = document.querySelectorAll(".boat-color-big");
+let moteurs = document.querySelectorAll(".puissance-moteur");
+let button = document.querySelector("button");
 
-let originalPrice = 99990;
+let originalPrice = 149990;
 let price = originalPrice;
 let result = false;
 let memo = document.querySelector(".is-selected");
+let prevMoteur = document.querySelector(".moteur-selected");
 let colorChoice = false;
 
 priceElement.innerHTML = price + " €";
@@ -39,11 +42,16 @@ mail.addEventListener("blur", function() {
   isValid(mail, /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i.test(mail.value));
 });
 
-let olderPrice = 0;
+for (let moteur of moteurs) {
+  moteur.addEventListener("click", function() {
+    prevMoteur.classList.remove("moteur-selected");
+    moteur.classList.add("moteur-selected");
+    prevMoteur = moteur;
 
-mail.addEventListener("blur", function() {
-  isValid(mail, /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i.test(mail.value));
-});
+    let newPrice = Number(moteur.getAttribute("data-price")) + price;
+    priceElement.innerHTML = newPrice + "€";
+  });
+}
 
 for (let i = 0; i < colors.length; i++) {
   let parent = colors[i].parentNode;
@@ -75,9 +83,8 @@ for (let i = 0; i < colors.length; i++) {
   });
 }
 
-form.addEventListener("submit", function(e) {
+button.addEventListener("click", function(e) {
   e.preventDefault();
-
   if (result) {
     overlay.style.display = "flex";
     alertOk.style.display = "block";
@@ -87,18 +94,10 @@ form.addEventListener("submit", function(e) {
       alertOk.style.display = "none";
     }, 3000);
 
-    for (let i of inputs) {
-      resetForm(i);
-    }
     resetForm(mail);
-    resetCheckboxes();
   } else if (!result) {
     overlay.style.display = "flex";
     alertWrong.style.display = "block";
-
-    inputs.forEach(function(elt) {
-      isValid(elt, elt.value);
-    });
 
     isValid(mail, /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i.test(mail.value));
 

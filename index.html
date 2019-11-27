@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200i,300i,400,400i,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/description-otpions.css" />
+    <link rel="stylesheet" href="css/description-options.css" />
     <link rel="stylesheet" href="css/techno.css" />
     <link rel="stylesheet" href="css/ficheTech.css" />
     <title>Tesla arch-E-mede</title>
@@ -26,10 +30,10 @@
               <a class="lien-menu" href="#">Description</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#">Technologie</a>
+              <a class="lien-menu" href="#techno">Technologie</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#">Commandez</a>
+              <a class="lien-menu" href="#order">Commandez</a>
             </li>
             <li class="menu-items">
               <a class="lien-menu" href="#">Actualités</a>
@@ -45,18 +49,50 @@
         /></a>
       </div>
     </header>
-    <section class="techno">
+    <section class="description">
+      <div class="description-wrapper">
+        <div class="description-image">
+          <img
+            class="description-image-content"
+            alt="arche-e-mede"
+            src="./img/boat_red_logo.png"
+          />
+        </div>
+        <p class="description-text">Design Futuriste</p>
+        <div class="description-image">
+          <img
+            class="description-image-content"
+            alt="arch-e-mede"
+            src="img/description-design2.png"
+          />
+        </div>
+      </div>
+      <div class="description-wrapper">
+        <p class="description-text">Silencieux</p>
+        <div class="description-image">
+          <img
+            class="description-image-content"
+            alt="arche-e-mede"
+            src="img/description-noise.jpg"
+          />
+        </div>
+        <p class="description-text">Auto-rechargeable</p>
+      </div>
+    </section>
+    <section class="techno" id="techno">
       <div class="techno-wrapper">
         <div class="techno-image">
+
           <img class="techno-image-content" src="img/solaire.png" alt="" />
         </div>
         <p class="techno-text">
           Malgré son apparence, Arch-e-mede est bien composé de panneau solaire
-          placé à l’avant du bateau sous une couche de peinture. Ces panneau
+
+          placé à l’avant du bateau sous une couche de pe inture. Ces panneau
           solaire permettent la production d’énergie inépuisable et non
           polluante. L’électricité produite est en priorité utilisée pour
-          alimenter le moteur et le surplus non consommé est stocké dans une
-          batterie de stockage.
+          alimenter le moteur.
+
         </p>
       </div>
       <div class="techno-wrapper">
@@ -70,9 +106,10 @@
         <p class="techno-text">
           Arch-e-mede est doté de la dernière version d’autopilotage. Elle
           combine plusieurs caméras offrant une vision à 360°, mais aussi un GPS
-          satellite et un sonar, vous offrant ainsi une sécurité optimale que
-          vous rentriez au port ou que vous naviguiez en haute mer. Le contrôle
-          à distance du Arch-e-mede est disponible par smartphone via
+
+          satellite et un sonar, vous offrant ainsi une sécurité optimale. Le
+          contrôle à distance du Arch-e-mede est disponible par smartphone via
+
           l’application Tesla.
         </p>
       </div>
@@ -82,12 +119,10 @@
         </div>
         <p class="techno-text">
           La véritable innovation de ce bateau se cache sous sa coque.
-          Arch-e-mede est doté d’une technologie hydraulique permettant de
-          recharger ses batteries au grès de la navigation et des courants. En
-          effet, le fond de la coque est composé d’un tunnel permettant de
-          laisser passer l’eau, actionnant ainsi des ailettes dont la rotation
-          créée de l'énergie. Cette dernière sera ensuite emmagasiné dans les
-          batteries.
+
+          Arch-e-mede est doté d’une technologie hydraulique permettant de créer
+          de l'énergie et par conséquent de recharger ses batteries au grès de
+          la navigation et des courants.
         </p>
       </div>
     </section>
@@ -147,16 +182,14 @@
     <section class="form-section" id="order">
       <div class="form-overlay">
         <p class="alert-ok">
-          <span>Votre commande a bien été prise en compte :)</span>
+          <span>Merci de votre commande</span>
         </p>
         <p class="alert-wrong">
-          <span
-            >•ERROR• <br />
-            Veuillez vérifier la bonne saisie de vos données</span
-          >
+          <span>Merci d'indiquer une adresse mail</span>
         </p>
       </div>
       <form>
+        <h1>PRECOMMANDE</h1>
         <div class="info-perso">
           <h2>Vos informations</h2>
 
@@ -178,14 +211,14 @@
         <div class="caracteristiques">
           <h2>Puissance du moteur</h2>
           <div class="select-puissance blur-verif" id="select-puissance">
-            <div class="puissance-moteur" data-price="20000">
-              Elevée - Max 40nds + 20000€
+            <div class="puissance-moteur moteur-selected" data-price="0">
+              Single Super Motor - Max 20nds
             </div>
             <div class="puissance-moteur" data-price="10000">
-              Moyenne - Max 30nds + 10000€
+              <span>Duo Super Motor - Max 30nds</span> <span>+ 10000€</span>
             </div>
-            <div class="puissance-moteur" data-price="0">
-              Classique - Max 20nds
+            <div class="puissance-moteur" data-price="20000">
+              <span>Tri Super Motor - Max 40nds</span> <span>+ 20000€</span>
             </div>
           </div>
 
@@ -235,7 +268,7 @@
           <h2>PRIX :</h2>
           <span class="prix"></span>
         </div>
-        <input class="submit" type="submit" data-price="Passer la commande" />
+        <button class="boutton-commande">PRECOMMANDER</button>
       </form>
       <div class="color-img-big-device">
         <div class="colors-img">
