@@ -16,6 +16,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  font-family: "Montserrat";
+
   background-color: black;
   color: white;
+
 }
