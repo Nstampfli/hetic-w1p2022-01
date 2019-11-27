@@ -1,0 +1,35 @@
+.technique-title {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.ficheTech {
+  width: 100%;
+}
+.technique-image {
+  display: none;
+}
+.technique-parentflex {
+  width: 80%;
+}
+.technique-flexbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid black;
+  margin-top: 3%;
+}
+
+.technique-flexbox:nth-child(11) {
+  border-bottom: none;
+}
+
+.technique-title-caract {
+  font-weight: bold;
+  margin: 3%;
+}
+
+.technique-title-number {
+  margin: 3%;
+}
