@@ -6,22 +6,24 @@
 .ficheTech {
   width: 100%;
 }
-.technique-image {
-  display: none;
-}
-.technique-parentflex {
+.technique {
   width: 80%;
 }
+
+.tech-flex-img {
+  display: none;
+}
+
 .technique-flexbox {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   margin-top: 3%;
 }
 
-.technique-flexbox:nth-child(11) {
+.technique-flexbox:nth-child(12) {
   border-bottom: none;
 }
 
@@ -32,4 +34,26 @@
 
 .technique-title-number {
   margin: 3%;
+}
+
+@media screen and (min-width: 768px) {
+  .technique {
+    display: flex;
+    width: 80%;
+  }
+
+  .ficheTech {
+    width: 50%;
+  }
+
+  .technique-flexbox-img {
+    width: 80%;
+  }
+
+  .tech-flex-img {
+    display: flex;
+    width: 60%;
+    margin-top: 30%;
+    margin-left: 25%;
+  }
 }
