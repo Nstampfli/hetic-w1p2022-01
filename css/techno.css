@@ -1,0 +1,43 @@
+.techno {
+  width: 100%;
+  min-height: auto;
+}
+
+.techno-wrapper {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.techno-image {
+  width: 100%;
+  height: auto;
+}
+
+.techno-image-content {
+  width: 100%;
+  height: auto;
+}
+
+.techno-text {
+  margin: 15%;
+  text-align: center;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .techno-wrapper {
+    flex-direction: row;
+  }
+  .techno-wrapper:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .techno-image {
+    width: 225%;
+  }
+  .techno-text {
+    margin: auto;
+    padding: 5%;
+  }
+}

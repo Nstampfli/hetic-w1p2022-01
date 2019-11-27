@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300i,400,400i,500&display=swap" 
+    rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/description-options.css" />
+    <link rel="stylesheet" href="css/techno.css" />
+    <link rel="stylesheet" href="css/ficheTech.css" />
     <title>Tesla arch-E-mede</title>
-    <script defer type="text/javascript" src="./js/header.js"></script>
+    <script defer type="text/javascript" src="js/header.js"></script>
   </head>
   <body>
-    <header>
-      <img
-        class="photo-header"
-        alt="photo arch-e-mede en mer"
-        src="./img/boat in mouvement.jpg"
-      />
+    <header id="up">
+      <img class="logo-arch" alt="logo-arch-e-mede" src="img/logo-arch.jpg" />
+      <a class="buy-button" href="#order"><span>ORDER NOW</span></a>
       <div class="header-wrapper">
         <nav id="menu" class="menu">
-          <ul class="menu-items">
-            <li>Description</li>
-            <li>Technologie</li>
-            <li>Commandez</li>
-            <li>Actualités</li>
+          <ul class="menu-list open-close">
+            <li class="menu-items">
+              <a class="lien-menu" href="#">Description</a>
+            </li>
+            <li class="menu-items">
+              <a class="lien-menu" href="#techno">Technologie</a>
+            </li>
+            <li class="menu-items">
+              <a class="lien-menu" href="#order">Commandez</a>
+            </li>
+            <li class="menu-items">
+              <a class="lien-menu" href="#">Actualités</a>
+            </li>
           </ul>
-          <div id="open-menu" class="open-menu">
+          <div id="open-menu" class="open-menu open-close">
             <div id="menu-icon" class="menu-icon"></div>
           </div>
         </nav>
-        <img class="logo-tesla" alt="logo-tesla" src="./img/logo-tesla.png" />
+
+        <a href="#up" class="logo-tesla"
+          ><img alt="logo-tesla" src="img/LOGO-2.png"
+        /></a>
       </div>
-      <img class="logo-arch" alt="logo-arch-e-mede" src="img/logo-arch.jpg" />
     </header>
     <section class="description">
       <div class="description-wrapper">
@@ -64,43 +75,107 @@
           />
         </div>
         <p class="description-text">Auto-rechargeable</p>
+    </div>
+   </section>
+    <section class="techno" id="techno">
+      <div class="techno-wrapper">
+        <div class="techno-image"> <img class="techno-image-content" src="img/solaire.png" alt=""></div>
+        <p class="techno-text">Malgré son apparence, Arch-e-mede est bien composé de panneau 
+           solaire placé à l’avant du bateau sous une couche de peinture. Ces panneau solaire
+           permettent  la production d’énergie inépuisable et non polluante. L’électricité 
+           produite est en priorité utilisée pour alimenter le moteur et le surplus non 
+           consommé est stocké dans une batterie de stockage.</p>
+      </div>
+      <div class="techno-wrapper">
+        <div class="techno-image"> <img class="techno-image-content" src="img/boatautopilot.jpg" alt=""></div>
+        <p class="techno-text">Arch-e-mede est doté de la dernière version d’autopilotage.
+          Elle combine plusieurs caméras offrant une vision à 360°, mais aussi un GPS
+          satellite et un sonar, vous offrant ainsi une sécurité optimale que vous rentriez 
+          au port ou que vous naviguiez en haute mer. Le contrôle à distance du Arch-e-mede
+          est disponible par smartphone via l’application Tesla.</p>
+      </div>
+      <div class="techno-wrapper">
+        <div class="techno-image"> <img class="techno-image-content" src="img/turbine.png" alt=""></div>
+        <p class="techno-text">La véritable innovation de ce bateau se cache sous sa coque.
+            Arch-e-mede est doté d’une technologie hydraulique permettant de recharger ses batteries
+            au grès de la navigation et des courants. En effet, le fond de la coque est composé 
+            d’un tunnel permettant de laisser passer l’eau, actionnant ainsi des ailettes dont la 
+            rotation créée de l'énergie. Cette dernière sera ensuite emmagasiné dans les batteries.
+            </p>
       </div>
     </section>
+    <div class="technique-parentflex">
+      <h2 class="technique-title">Fiche technique</h2>
+      <div class="ficheTech">
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Longueur hors tout</div>
+          <div class="technique-title-number">6,64m</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Longueur de coque</div>
+          <div class="technique-title-number">6,23m</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Longueur de flotaison</div>
+          <div class="technique-title-number">6,16m</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">largeur maxi</div>
+          <div class="technique-title-number">2,55</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Tirant d'eau</div>
+          <div class="technique-title-number">1,60m</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Diamètre maxi des flotteurs</div>
+          <div class="technique-title-number">6,15m</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Puissance maxi</div>
+          <div class="technique-title-number">400 Chv</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Puissance mini</div>
+          <div class="technique-title-number">200 Chv</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Puissance intermediaire</div>
+          <div class="technique-title-number">320 Chv</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Poids sans moteur</div>
+          <div class="technique-title-number">644 kg</div>
+        </div>
+        <div class="technique-flexbox">
+          <div class="technique-title-caract">Garantie</div>
+          <div class="technique-title-number">5 ans</div>
+        </div>
+      </div>
+      <div class="technique-image">
+        <img src="/img/boatguiverti.png" alt="boat_3d" />
+      </div>
+    </div>
     <hr class="separation" />
-    <section class="form-section">
+    <section class="form-section" id="order">
       <div class="form-overlay">
         <p class="alert-ok">
-          <span>Votre commande a bien été prise en compte :)</span>
+          <span>Merci de votre commande</span>
         </p>
         <p class="alert-wrong">
-          <span
-            >•ERROR• <br />
-            Veuillez vérifier la bonne saisie de vos données</span
-          >
+          <span>Merci d'indiquer une adresse mail</span>
         </p>
       </div>
       <form>
+        <h1>PRECOMMANDE</h1>
         <div class="info-perso">
           <h2>Vos informations</h2>
-          <div class="name">
-            <input
-              class="blur-verif"
-              type="text"
-              name="name"
-              placeholder="Nom Prenom"
-            />
-            <img
-              class="invalid-symbole symbole-name"
-              src="img/invalid-icone.png"
-            />
-            <img class="valid-symbole symbole-name" src="img/valid-icone.png" />
-            <div class="help-text">Veuillez saisir votre nom</div>
-          </div>
+
           <div class="mail">
             <input
-              class="regex-verif"
+              class="email"
               type="email"
-              name="mail"
+              name="email"
               placeholder="Adresse mail"
             />
             <img
@@ -112,130 +187,112 @@
           </div>
         </div>
         <div class="caracteristiques">
-          <div>
-            <label for="select-puissance">Choisir la puissance du moteur</label
-            ><br />
-            <div class="select-div">
-              <select class="select-puissance blur-verif" id="select-puissance">
-                <option value="" data-price="0">Puissance du moteur</option>
-                <option value="20000"
-                  ><strong>Elevée</strong> - Max 40nds <stron>+20000€</stron>
-                </option>
-                <option value="10000"
-                  ><strong>Moyenne</strong> - Max 30nds
-                  <stron>+10000€</stron></option
-                >
-                <option value="0">
-                  <strong>Classique</strong> - Max 20nds</option
-                >
-              </select>
-              <img
-                class="invalid-symbole symbole-select"
-                src="img/invalid-icone.png"
-              />
-              <img
-                class="valid-symbole symbole-select"
-                src="img/valid-icone.png"
-              />
-              <div class="help-text">
-                Veuillez choisir un moteur
+          <h2>Puissance du moteur</h2>
+          <div class="select-puissance blur-verif" id="select-puissance">
+            <div class="puissance-moteur moteur-selected" data-price="0">
+              Single Super Motor - Max 20nds
+            </div>
+            <div class="puissance-moteur" data-price="10000">
+              <span>Duo Super Motor - Max 30nds</span> <span>+ 10000€</span>
+            </div>
+            <div class="puissance-moteur" data-price="20000">
+              <span>Tri Super Motor - Max 40nds</span> <span>+ 20000€</span>
+            </div>
+          </div>
+
+          <div class="color-choice">
+            <h2>Couleurs aux choix</h2>
+            <ul class="colors">
+              <li class="color-li is-selected">
+                <img class="color-sample " src="img/colors/color-black.png" />
+                <p class="color-description">Noir</p>
+              </li>
+              <li class="color-li">
+                <img class="color-sample" src="img/colors/color-blue.png" />
+                <p class="color-description">Bleu</p>
+              </li>
+              <li class="color-li">
+                <img class="color-sample" src="img/colors/color-red.png" />
+                <p class="color-description">Rouge</p>
+              </li>
+              <li class="color-li">
+                <img class="color-sample" src="img/colors/color-white.png" />
+                <p class="color-description">Blanc</p>
+              </li>
+            </ul>
+            <div class="color-img-small-device">
+              <div class="colors-img">
+                <img
+                  class="boat-color visible"
+                  src="img/boats-colors/boat_black_logo.png"
+                />
+                <img
+                  class="boat-color"
+                  src="img/boats-colors/boat_blue_logo.png"
+                />
+                <img
+                  class="boat-color"
+                  src="img/boats-colors/boat_red_color_logo2.png"
+                />
+                <img
+                  class="boat-color"
+                  src="img/boats-colors/boat_white_color.png"
+                />
               </div>
             </div>
-          </div>
-          <div class="color-choice">
-            <h3>Couleur du bateau</h3>
-            <div class="colors" name>
-              <div class="color"></div>
-              <div class="color"></div>
-              <div class="color"></div>
-              <div class="color"></div>
-              <div class="color"></div>
-            </div>
-            <div class="help-text">Veuillez choisir une couleur</div>
-          </div>
-          <div class="option-checkbox">
-            <h3>Options</h3>
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="pilote-auto"
-              name="pilote-auto"
-              data-price="15000"
-            />
-            <label for="pilote-auto">Navigation autonome</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="distance-controle"
-              name="distance-controle"
-              data-price="15000"
-            /><label for="istance-controle">Contrôle à distance</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="alarm"
-              name="alarm"
-              data-price="5000"
-            /><label for="alarm">Système d'alarme</label><br />
-
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="champagne"
-              name="champagne"
-              data-price="1000"
-            /><label for="champagne">Kit à champagne</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="assitance"
-              name="assistance"
-              data-price="5000"
-            /><label for="assistance">Assistance VIP</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="carte-vip"
-              name="carte-vip"
-              data-price="3000"
-            /><label for="carte-vip">Carte de membre</label>
           </div>
         </div>
         <div class="prix-total">
           <h2>PRIX :</h2>
           <span class="prix"></span>
         </div>
-        <input class="submit" type="submit" value="Passer la commande" />
+        <button class="boutton-commande">PRECOMMANDER</button>
       </form>
+      <div class="color-img-big-device">
+        <div class="colors-img">
+          <img
+            class="boat-color-big visible"
+            src="img/boats-colors/boat_black_logo.png"
+          />
+          <img
+            class="boat-color-big"
+            src="img/boats-colors/boat_blue_logo.png"
+          />
+          <img
+            class="boat-color-big"
+            src="img/boats-colors/boat_red_color_logo2.png"
+          />
+          <img
+            class="boat-color-big"
+            src="img/boats-colors/boat_white_color.png"
+          />
+        </div>
+      </div>
     </section>
     <footer class="footer">
-      <div class=" footertext">
-        <ul class="footerbox">
-          <li>
-            <a class="lien" href="https://www.tesla.com/fr_FR/about/legal"
-              >Mentions légales</a
-            >
-          </li>
-          <li>
-            <a class="lien" href="https://www.tesla.com/fr_FR/contact"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a class="lien" href="https://www.tesla.com/fr_FR/updates"
-              >Newsletter</a
-            >
-          </li>
-          <li>
-            <a
-              class="lien"
-              href="http://www.tesla-mag.com/forum/phpBB3/viewforum.php?f=48"
-              >Forum</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="footerbox footersocial">
+      <ul class="footerbox">
+        <li>
+          <a class="lien" href="https://www.tesla.com/fr_FR/about/legal"
+            >Mentions légales</a
+          >
+        </li>
+        <li>
+          <a class="lien" href="https://www.tesla.com/fr_FR/contact">Contact</a>
+        </li>
+        <li>
+          <a class="lien" href="https://www.tesla.com/fr_FR/updates"
+            >Newsletter</a
+          >
+        </li>
+        <li>
+          <a
+            class="lien"
+            href="http://www.tesla-mag.com/forum/phpBB3/viewforum.php?f=48"
+            >Forum</a
+          >
+        </li>
+      </ul>
+      <div class="footerbox">
         <a href="https://www.instagram.com/teslamotors/?hl=fr">
           <img class="footerlogo" src="img/logoinsta.png" alt=""
         /></a>
