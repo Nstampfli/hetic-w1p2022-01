@@ -17,6 +17,8 @@
   </head>
   <body>
     <header id="up">
+      <img class="logo-arch" alt="logo-arch-e-mede" src="img/logo-arch.jpg" />
+      <a class="buy-button" href="#order"><span>ORDER NOW</span></a>
       <div class="header-wrapper">
         <nav id="menu" class="menu">
           <ul class="menu-list open-close">
@@ -39,11 +41,9 @@
         </nav>
 
         <a href="#up" class="logo-tesla"
-          ><img alt="logo-tesla" src="img/logo-tesla.png"
+          ><img alt="logo-tesla" src="img/LOGO-2.png"
         /></a>
       </div>
-      <img class="logo-arch" alt="logo-arch-e-mede" src="img/logo-arch.jpg" />
-      <a class="buy-button" href="#order"><span>ORDER NOW</span></a>
     </header>
     <section class="techno">
       <div class="techno-wrapper">
@@ -99,7 +99,6 @@
         </p>
       </div>
     </section>
-
     <div class="technique-parentflex">
       <h2 class="technique-title">Fiche technique</h2>
       <div class="ficheTech">
@@ -168,26 +167,12 @@
       <form>
         <div class="info-perso">
           <h2>Vos informations</h2>
-          <div class="name">
-            <input
-              class="blur-verif"
-              type="text"
-              name="name"
-              placeholder="Nom Prenom"
-            />
-            <img
-              class="invalid-symbole symbole-name"
-              src="img/invalid-icone.png"
-            />
-            <img class="valid-symbole symbole-name" src="img/valid-icone.png" />
-            <div class="help-text">Veuillez saisir votre nom</div>
-          </div>
+
           <div class="mail">
             <input
-              class="regex-verif"
+              class="email"
               type="email"
-              d
-              name="mail"
+              name="email"
               placeholder="Adresse mail"
             />
             <img
@@ -199,38 +184,21 @@
           </div>
         </div>
         <div class="caracteristiques">
-          <div>
-            <label for="select-puissance">Choisir la puissance du moteur</label
-            ><br />
-            <div class="select-div">
-              <select class="select-puissance blur-verif" id="select-puissance">
-                <option value="" data-price="0">Puissance du moteur</option>
-                <option value="20000"
-                  ><strong>Elevée</strong> - Max 40nds <stron>+20000€</stron>
-                </option>
-                <option value="10000"
-                  ><strong>Moyenne</strong> - Max 30nds
-                  <stron>+10000€</stron></option
-                >
-                <option value="0">
-                  <strong>Classique</strong> - Max 20nds</option
-                >
-              </select>
-              <img
-                class="invalid-symbole symbole-select"
-                src="img/invalid-icone.png"
-              />
-              <img
-                class="valid-symbole symbole-select"
-                src="img/valid-icone.png"
-              />
-              <div class="help-text">
-                Veuillez choisir un moteur
-              </div>
+          <h2>Puissance du moteur</h2>
+          <div class="select-puissance blur-verif" id="select-puissance">
+            <div class="puissance-moteur" data-price="20000">
+              Elevée - Max 40nds + 20000€
+            </div>
+            <div class="puissance-moteur" data-price="10000">
+              Moyenne - Max 30nds + 10000€
+            </div>
+            <div class="puissance-moteur" data-price="0">
+              Classique - Max 20nds
             </div>
           </div>
+
           <div class="color-choice">
-            <h3>Couleurs aux choix</h3>
+            <h2>Couleurs aux choix</h2>
             <ul class="colors">
               <li class="color-li is-selected">
                 <img class="color-sample " src="img/colors/color-black.png" />
@@ -249,73 +217,53 @@
                 <p class="color-description">Blanc</p>
               </li>
             </ul>
-            <div class="help-text">Veuillez choisir une couleur</div>
-          </div>
-          <div class="option-checkbox">
-            <h3>Options</h3>
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="pilote-auto"
-              name="pilote-auto"
-              data-price="15000"
-            />
-            <label for="pilote-auto">Navigation autonome</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="distance-controle"
-              name="distance-controle"
-              data-price="15000"
-            /><label for="istance-controle">Contrôle à distance</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="alarm"
-              name="alarm"
-              data-price="5000"
-            /><label for="alarm">Système d'alarme</label><br />
-
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="champagne"
-              name="champagne"
-              data-price="1000"
-            /><label for="champagne">Kit à champagne</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="assitance"
-              name="assistance"
-              data-price="5000"
-            /><label for="assistance">Assistance VIP</label><br />
-            <input
-              class="checkbox"
-              type="checkbox"
-              id="carte-vip"
-              name="carte-vip"
-              data-price="3000"
-            /><label for="carte-vip">Carte de membre</label>
+            <div class="color-img-small-device">
+              <div class="colors-img">
+                <img
+                  class="boat-color visible"
+                  src="img/boats-colors/boat_black_logo.png"
+                />
+                <img
+                  class="boat-color"
+                  src="img/boats-colors/boat_blue_logo.png"
+                />
+                <img
+                  class="boat-color"
+                  src="img/boats-colors/boat_red_color_logo2.png"
+                />
+                <img
+                  class="boat-color"
+                  src="img/boats-colors/boat_white_color.png"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div class="prix-total">
           <h2>PRIX :</h2>
           <span class="prix"></span>
         </div>
-        <input class="submit" type="submit" value="Passer la commande" />
+        <input class="submit" type="submit" data-price="Passer la commande" />
       </form>
-      <div class="colors-img">
-        <img
-          class="boat-color visible"
-          src="img/boats-colors/boat_black_logo.png"
-        />
-        <img class="boat-color" src="img/boats-colors/boat_blue_logo.png" />
-        <img
-          class="boat-color"
-          src="img/boats-colors/boat_red_color_logo2.png"
-        />
-        <img class="boat-color" src="img/boats-colors/boat_white_color.png" />
+      <div class="color-img-big-device">
+        <div class="colors-img">
+          <img
+            class="boat-color-big visible"
+            src="img/boats-colors/boat_black_logo.png"
+          />
+          <img
+            class="boat-color-big"
+            src="img/boats-colors/boat_blue_logo.png"
+          />
+          <img
+            class="boat-color-big"
+            src="img/boats-colors/boat_red_color_logo2.png"
+          />
+          <img
+            class="boat-color-big"
+            src="img/boats-colors/boat_white_color.png"
+          />
+        </div>
       </div>
     </section>
     <footer class="footer">
