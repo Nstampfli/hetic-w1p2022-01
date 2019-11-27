@@ -1,6 +1,8 @@
 .article-presentation-conteneur {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .article-news {
@@ -8,6 +10,7 @@
   top: 5%;
   left: 20%;
   font-size: 3em;
+  letter-spacing: 10px;
 }
 
 .suiv {
@@ -106,9 +109,9 @@
 
 @media screen and (min-width: 400px) {
   .article-presentation-image {
+    max-width: 962px;
     height: auto;
-    max-height: 343px;
-    max-width: 688px;
+    max-height: 513px;
   }
 }
 
@@ -118,5 +121,18 @@
   }
   .article-description {
     font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .article-news {
+    font-size: 5em;
+  }
+
+  .article-head {
+    font-size: 1.6em;
+  }
+  .article-description {
+    font-size: 1.3em;
   }
 }
