@@ -18,19 +18,34 @@
 }
 
 .footerlogo {
-  width: 25px;
-  height: auto;
+  display: inline-block;
+  width: 30px;
+}
+
+.footerlogo img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: column-reverse;
-    padding: 0 20%;
   }
 
   .footerbox {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     height: auto;
+  }
+
+  .footerlogo {
+    width: 40px;
+  }
+
+  .footerbox li {
+    margin: 0 5%;
+  }
+
+  .footerbox .footerlogo {
+    margin: 0 3%;
   }
 }
