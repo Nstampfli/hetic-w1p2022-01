@@ -15,7 +15,9 @@
 
 .suiv {
   position: absolute;
-  font-size: 0.8em;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: bold;
   top: 5%;
   right: 2%;
   z-index: 1;
@@ -28,7 +30,9 @@
 
 .prec {
   position: absolute;
-  font-size: 0.8em;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: bold;
   top: 5%;
   left: 2%;
   z-index: 1;
