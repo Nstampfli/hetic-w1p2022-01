@@ -47,16 +47,16 @@ header {
 
 .logo-tesla {
   position: fixed;
+  top: -2%;
   left: 5%;
-  top: 10px;
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 60px;
 }
 
 .logo-tesla img {
   position: fixed;
   width: 100px;
-  height: 40px;
+  height: 100px;
 }
 
 .menu {
@@ -120,10 +120,12 @@ header {
 
 .is-open .menu-icon::before {
   transform: translateY(2px) rotate(45deg);
+  background-color: black;
 }
 
 .is-open .menu-icon::after {
   transform: translateY(-2px) rotate(-45deg);
+  background-color: black;
 }
 
 .menu-list {
@@ -145,8 +147,8 @@ header {
 
 .is-open .menu-list {
   transform: none;
-  opacity: 0.8;
-  background-color: rgb(0, 0, 0);
+  opacity: 1;
+  background-color: whitesmoke;
   z-index: 1;
 }
 
@@ -156,12 +158,15 @@ header {
   font-size: 30px;
   margin-top: 30px;
   padding: 15px;
+  padding-bottom: 45px;
   color: #000;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid #c4c4c4;
   width: 50%;
   text-align: center;
 }
-
+.menu-items:hover {
+  cursor: pointer;
+}
 .lien-menu {
   display: flex;
   justify-content: center;
@@ -169,7 +174,7 @@ header {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .logo-arch {
@@ -186,7 +191,7 @@ header {
   position: absolute;
   padding-top: 8px;
   width: 60%;
-  min-width: 300px;
+  min-width: 273px;
   max-width: 400px;
   height: 50px;
   bottom: 10%;
@@ -307,6 +312,7 @@ header {
     font-size: 20px;
     cursor: pointer;
     background: none;
+    padding-bottom: 15px;
   }
   .menu-items a {
     font-weight: lighter;
