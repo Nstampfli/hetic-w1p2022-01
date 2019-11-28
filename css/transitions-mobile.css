@@ -1,5 +1,5 @@
 .move {
-  transform: translateY(10px);
+  transform: translateY(30px);
   opacity: 0;
   transition: transform 0.5s 0.2s, opacity 1s 0.2s;
 }
