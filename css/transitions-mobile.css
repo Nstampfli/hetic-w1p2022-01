@@ -1,6 +1,7 @@
 .move.is-moved {
   transform: none;
   opacity: 1;
+
 }
 
 .description-text {
@@ -37,6 +38,50 @@
   transform: translateY(30px);
   opacity: 0;
   transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+  .techno-img-1 {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+  .techno-text-1 {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+  .techno-img-2 {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+  .techno-text-2 {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+  .techno-img-3 {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+  .techno-text-3 {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+
+  .technique-tab {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+  .technique-img {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
 }
 
 @media screen and (min-width: 970px) {
