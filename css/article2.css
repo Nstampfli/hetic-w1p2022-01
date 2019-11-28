@@ -1,6 +1,11 @@
 body {
   background-color: black;
 }
+
+p {
+  text-align: justify;
+}
+
 .article2 {
   background: whitesmoke;
   padding: 5%;
@@ -9,18 +14,9 @@ body {
   position: relative;
 }
 
-.lienFleche {
-  position: absolute;
-  transform: translateX(-45px);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-
 .iconeFleche {
-  height: 80%;
-  width: 80%;
-  justify-content: center;
+  width: 30px;
+  margin-bottom: 20px;
 }
 .article2-contenu {
   display: flex;
@@ -70,6 +66,20 @@ body {
 
   .article2-twitter {
     padding: 0px 30px;
+  }
+
+  .lienFleche {
+    position: absolute;
+    transform: translateX(-45px);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .iconeFleche {
+    height: 80%;
+    width: 80%;
+    justify-content: center;
   }
 }
 
