@@ -8,3 +8,6 @@
   transform: none;
   opacity: 1;
 }
+
+@media screen and (min-width: 768px) {
+}
