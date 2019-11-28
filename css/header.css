@@ -47,7 +47,7 @@ header {
 
 .logo-tesla {
   position: fixed;
-  top: -2%;
+  top: -3%;
   left: 5%;
   width: 90px;
   height: 60px;
@@ -130,7 +130,6 @@ header {
 
 .menu-list {
   position: fixed;
-
   left: 0;
   top: 0;
   height: 100vh;
@@ -157,8 +156,7 @@ header {
   font-family: Arial, sans-serif;
   font-size: 30px;
   margin-top: 30px;
-  padding: 15px;
-  padding-bottom: 45px;
+  padding: 10px;
   color: #000;
   border-bottom: 1px solid #c4c4c4;
   width: 50%;
@@ -172,7 +170,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100px;
   text-decoration: none;
   color: black;
 }
@@ -206,7 +204,6 @@ header {
 .buy-button a {
   margin: auto;
   font-size: 1.5em;
-  letter-spacing: 5px;
   font-weight: bolder;
   color: white;
   text-decoration: none;
@@ -230,23 +227,28 @@ header {
   position: fixed;
   width: 30%;
   min-width: 94px;
+  height: 30px;
   text-align: center;
   text-decoration: none;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   border: 4px solid white;
-  top: 12px;
+  top: 15px;
   left: 40%;
   z-index: 1;
   padding: 5px 0;
 }
 
+.buy-button-header.pop {
+  display: flex;
+}
 .buy-button-header a {
   margin: auto;
   font-weight: bolder;
   color: white;
   text-decoration: none;
   letter-spacing: 0;
+  font-size: 0.7em;
 }
 
 .buy-button-header:hover {
@@ -261,22 +263,26 @@ header {
 }
 
 @media screen and (min-width: 400px) {
-  .buy-button-header {
-    width: 40%;
-    left: 35%;
-    top: 8px;
-    padding: 10px 0;
-  }
-
-  .buy-button-header a {
-    letter-spacing: 10px;
-  }
-
   .buy-button {
     letter-spacing: 10px;
   }
+
+  .buy-button-header a {
+    font-size: 1em;
+  }
 }
+
+@media screen and (min-width: 540px) {
+  .buy-button-header a {
+    letter-spacing: 5px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .logo-tesla {
+    top: -3%;
+  }
+
   .header-wrapper {
     position: fixed;
   }
@@ -311,15 +317,25 @@ header {
     margin-left: 20%;
   }
 
+  .menu-list.open-close {
+    z-index: 2;
+  }
+  .menu-list.is-hidden {
+    display: none;
+  }
+
   .menu-items {
     border: none;
     height: 20px;
     font-size: 20px;
     cursor: pointer;
     background: none;
-    padding-bottom: 15px;
+    padding-top: 0;
   }
   .menu-items a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
     font-weight: lighter;
     font-size: 0.8em;
     letter-spacing: 3px;
@@ -340,13 +356,17 @@ header {
 
   .buy-button-header {
     width: 25%;
+    min-width: 221px;
     left: 65%;
-    top: 8px;
-    padding: 10px 0;
+    height: 35px;
+    top: 10px;
   }
 
   .buy-button-header a {
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
   }
 }
 
