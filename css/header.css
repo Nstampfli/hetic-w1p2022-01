@@ -156,9 +156,9 @@ header {
 
 .logo-arch {
   position: absolute;
-  width: 70%;
-  max-width: 560px;
-  top: 15%;
+  width: 60%;
+  min-width: 480px;
+  top: 10%;
   align-self: center;
 }
 
