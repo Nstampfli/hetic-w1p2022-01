@@ -8,7 +8,6 @@ section {
 
 article {
   background: whitesmoke;
-
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -42,6 +41,12 @@ p {
   display: none;
 }
 
+.elon {
+  float: left;
+  margin: 10px;
+  margin-right: 10px;
+  }
+}
 .archi {
   float: right;
   margin: 10px;
@@ -73,12 +78,7 @@ aside {
     width: 200px;
   }
 
-  .elon {
-    float: left;
-    margin: 10px;
-    margin-right: 10px;
-  }
-}
+ 
 
 @media (min-width: 768px) {
   article {
