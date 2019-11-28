@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/description-options.css" />
     <link rel="stylesheet" href="css/techno.css" />
     <link rel="stylesheet" href="css/ficheTech.css" />
+    <link rel="stylesheet" href="css/article-link.css" />
     <title>Tesla arch-E-mede</title>
     <script defer type="text/javascript" src="js/header.js"></script>
   </head>
@@ -37,10 +38,10 @@
               <a class="lien-menu" href="#techno">Technologie</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#order">Commandez</a>
+              <a class="lien-menu" href="#order">Commander</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#">News</a>
+              <a class="lien-menu" href="#article">Actualités</a>
             </li>
           </ul>
           <div id="open-menu" class="open-menu open-close">
@@ -123,59 +124,62 @@
         </p>
       </div>
     </section>
-    <div class="technique">
-      <div class="ficheTech">
-        <h2 class="technique-title">Fiche technique</h2>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Longueur hors tout</div>
-          <div class="technique-title-number">6,64m</div>
+    <section class="section-technique">
+      <div class="technique">
+        <div class="ficheTech">
+          <h2 class="technique-title">Fiche technique</h2>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Longueur hors tout</div>
+            <div class="technique-title-number">6,64m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Longueur de coque</div>
+            <div class="technique-title-number">6,23m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Longueur de flotaison</div>
+            <div class="technique-title-number">6,16m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">largeur maxi</div>
+            <div class="technique-title-number">2,55m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Tirant d'eau</div>
+            <div class="technique-title-number">1,60m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">
+              Diamètre maxi des flotteurs
+            </div>
+            <div class="technique-title-number">6,15m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Puissance maxi</div>
+            <div class="technique-title-number">400 Chv</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Puissance mini</div>
+            <div class="technique-title-number">200 Chv</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Puissance intermediaire</div>
+            <div class="technique-title-number">320 Chv</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Poids sans moteur</div>
+            <div class="technique-title-number">644 kg</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Garantie</div>
+            <div class="technique-title-number">5 ans</div>
+          </div>
         </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Longueur de coque</div>
-          <div class="technique-title-number">6,23m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Longueur de flotaison</div>
-          <div class="technique-title-number">6,16m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">largeur maxi</div>
-          <div class="technique-title-number">2,55m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Tirant d'eau</div>
-          <div class="technique-title-number">1,60m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Diamètre maxi des flotteurs</div>
-          <div class="technique-title-number">6,15m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Puissance maxi</div>
-          <div class="technique-title-number">400 Chv</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Puissance mini</div>
-          <div class="technique-title-number">200 Chv</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Puissance intermediaire</div>
-          <div class="technique-title-number">320 Chv</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Poids sans moteur</div>
-          <div class="technique-title-number">644 kg</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Garantie</div>
-          <div class="technique-title-number">5 ans</div>
+        <div class="technique-flexbox-img">
+          <img class="tech-flex-img" src="./img/3d boat.png" alt="" />
         </div>
       </div>
-      <div class="technique-flexbox-img">
-        <img class="tech-flex-img" src="./img/3d boat.png" alt="" />
-      </div>
-    </div>
-    <hr class="separation" />
+    </section>
     <section class="form-section" id="order">
       <div class="form-overlay">
         <p class="alert-ok">
@@ -288,6 +292,44 @@
         </div>
       </div>
     </section>
+    <section id="article">
+      <div class="article-presentation-conteneur">
+        <span class="article-news">NEWS</span>
+        <span class="suiv">suiv ></span>
+        <span class="prec">< Préc</span>
+        <div class="article-here">
+          <div class="article-presentation-content">
+            <img class="article-presentation-image" src="img/cargo.jpg" />
+
+            <span class="article-head">Fret maritime et pollution</span>
+            <span class="article-description"
+              >Le poids du fret maritime est sans cesse croissant sur la
+              pollution mondiale</span
+            >
+            <button class="article-link">
+              <a href="article1.html" target="blank">LIRE</a>
+            </button>
+          </div>
+        </div>
+        <div class="article-here is-hidden">
+          <div class="article-presentation-content">
+            <img
+              class="article-presentation-image"
+              src="img/article2-presentation.jpg"
+            />
+
+            <span class="article-head">Tesla innove en haute mer</span>
+            <span class="article-description"
+              >Les nouvelles mannes de Musk:<br />
+              Click n' Boat & Taxi Boat</span
+            >
+            <button class="article-link">
+              <a href="article2.html" target="blank">LIRE</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <ul class="footerbox">
         <li>
@@ -312,20 +354,27 @@
         </li>
       </ul>
       <div class="footerbox">
-        <a href="https://www.instagram.com/teslamotors/?hl=fr">
-          <img class="footerlogo" src="img/logoinsta.png" alt=""
+        <a
+          class="footerlogo"
+          href="https://www.instagram.com/teslamotors/?hl=fr"
+        >
+          <img src="img/logoinsta.png" alt=""
         /></a>
-        <a href="https://twitter.com/tesla?lang=fr"
-          ><img class="footerlogo" src="img/logotwitter.png" alt=""
+        <a class="footerlogo" href="https://twitter.com/tesla?lang=fr"
+          ><img src="img/logotwitter.png" alt=""
         /></a>
-        <a href="https://www.facebook.com/TeslaMoto/"
-          ><img class="footerlogo" src="img/logofb.png" alt=""
+        <a class="footerlogo" href="https://www.facebook.com/TeslaMoto/"
+          ><img src="img/logofb.png" alt=""
         /></a>
-        <a href="https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ">
-          <img class="footerlogo" src="img/logoytb.png" alt="" />
+        <a
+          class="footerlogo"
+          href="https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ"
+        >
+          <img src="img/logoytb.png" alt="" />
         </a>
       </div>
     </footer>
     <script type="text/javascript" src="JS/form.js"></script>
+    <script type="text/javascript" src="JS/article.js"></script>
   </body>
 </html>

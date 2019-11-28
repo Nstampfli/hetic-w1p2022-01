@@ -1,88 +1,75 @@
 body {
-  background: black;
+  background-color: black;
 }
-
-section {
-  overflow: hidden;
-}
-
-article {
+.article2 {
   background: whitesmoke;
   padding: 5%;
   display: flex;
   flex-direction: column;
 }
 
-h1 {
-  font-size: 30px;
+.article2-contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.article2-title {
+  font-size: 24px;
   font-weight: bolder;
   margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
-
-h3 {
+.article2-secondary-title {
   font-size: 20px;
   font-weight: bold;
   padding: 20px;
   margin-top: 20px;
 }
 
-p {
-  text-align: justify;
+
+.article2-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.archi-crique {
-  float: right;
-  margin: 20px;
+.article2-image-content {
+  width: 100%;
+  padding: 15px 0px;
 }
 
-.div-elon {
-  display: none;
-}
-
-.elon {
-  float: left;
-  margin: 10px;
-  margin-right: 10px;
-  }
-}
-.archi {
-  float: right;
-  margin: 10px;
-  margin-left: 20px;
-}
-
-aside {
-  margin: 2%;
-  margin-top: 20%;
-  margin-left: 5%;
-}
-
-.auteurs {
-  position: absolute;
+.article2-auteur {
   font-size: 12px;
   color: gray;
-  padding: 20px;
+  padding: 30px 0px 50px 30px;
 }
 
-@media (min-width: 320px) {
-  .archi-crique {
-    width: 40%;
-  }
+.article2-twitter {
+  width: 100%;
 }
-
-@media (min-width: 600px) {
-  .div-elon {
-    display: block;
-    width: 200px;
-  }
-
- 
 
 @media (min-width: 768px) {
-  article {
+  .article2 {
     flex-direction: row;
     margin: 10%;
+    padding: 5% 0 5% 5%;
+  }
+
+  .article2-twitter {
+    padding: 0px 30px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .article2-wrapper {
+    flex-direction: row;
+  }
+  .article2-wrapper:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+  .article2-image-content {
+    width: 20vw;
+    padding: 5%;
   }
 }
