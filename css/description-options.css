@@ -30,8 +30,6 @@
 }
 
 .description-text {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
   text-transform: uppercase;
   /*opacity: 0;
   transition: opacity 0.3s;*/
