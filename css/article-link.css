@@ -46,7 +46,7 @@
 .article-presentation-image {
   opacity: 0.4;
   width: 100%;
-  height: 200px;
+  max-height: 200px;
 }
 
 .article-head {
@@ -109,7 +109,8 @@
 @media screen and (min-width: 400px) {
   .article-presentation-image {
     max-width: 907px;
-    height: 550px;
+    height: auto;
+    max-height: 550px;
     overflow: hidden;
   }
 }
