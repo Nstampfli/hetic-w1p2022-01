@@ -1,13 +1,83 @@
-.move {
-  transform: translateY(30px);
-  opacity: 0;
-  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
-}
-
 .move.is-moved {
   transform: none;
   opacity: 1;
 }
 
-@media screen and (min-width: 768px) {
+.description-text {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+.description-image-content {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+.techno-wrapper {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+.ficheTech {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+.form-section {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+.section-article {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+@media screen and (min-width: 970px) {
+  .text-design {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    transition-delay: 0.2s;
+  }
+
+  .text-noise {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    transition-delay: 0.6s;
+  }
+
+  .text-eco {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    transition-delay: 1s;
+  }
+
+  .description-image-content {
+    transform: translateX(60px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .formCommande {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
+
+  .color-img-big-device {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: transform 1s 0.2s, opacity 1s 0.2s;
+  }
 }
