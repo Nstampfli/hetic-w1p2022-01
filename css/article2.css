@@ -27,6 +27,7 @@ body {
   margin-top: 20px;
 }
 
+
 .article2-wrapper {
   display: flex;
   flex-direction: column;
@@ -53,10 +54,12 @@ body {
     margin: 10%;
     padding: 5% 0 5% 5%;
   }
+
   .article2-twitter {
     padding: 0px 30px;
   }
 }
+
 
 @media (min-width: 1024px) {
   .article2-wrapper {

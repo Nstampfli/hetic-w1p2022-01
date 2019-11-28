@@ -4,12 +4,10 @@ body {
 
 article {
   background: whitesmoke;
-  margin: 10%;
   padding: 5%;
   display: flex;
   flex-direction: column;
 }
-
 
 aside {
   margin: 2%;
@@ -47,6 +45,9 @@ p {
   text-align: justify;
 }
 
+.div-cargo {
+  display: none;
+}
 
 .cargoSolaire {
   float: left;
@@ -65,9 +66,18 @@ p {
   padding: 20px;
 }
 
+@media (min-width: 600px) {
+  .div-cargo {
+    display: block;
+    width: 200px;
+  }
+
+
 @media (min-width: 768px) {
   article {
     flex-direction: row;
+    flex-direction: row;
+    margin: 10%;
   }
 }
 
