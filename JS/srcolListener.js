@@ -1,4 +1,11 @@
-var elementsMove = document.querySelectorAll(".move");
+let elementsMove = document.querySelectorAll(".move");
+let upDescription = document.querySelector(".description");
+let headerWrapper = document.querySelector(".header-wrapper");
+let upperButton = document.querySelector(".buy-button-header");
+let formElement = document.querySelector(".form-section");
+let menuElt = document.querySelector(".menu-list");
+let crossButton = document.querySelector(".open-menu");
+let menuOpen = document.querySelector(".menu");
 
 function revealElement() {
   elementsMove.forEach(function(element) {
@@ -9,8 +16,30 @@ function revealElement() {
   });
 }
 
+function revealUpperButton() {
+  upperButton.classList.toggle(
+    "pop",
+    window.scrollY > window.innerHeight + 20 &&
+      window.scrollY < formElement.offsetTop
+  );
+
+  menuElt.classList.toggle(
+    "is-hidden",
+    window.scrollY > window.innerHeight + 10
+  );
+}
+
+crossButton.addEventListener("click", function() {
+  if (menuOpen.classList.contains("is-open")) {
+    upperButton.classList.remove("pop");
+  } else {
+    upperButton.classList.add("pop");
+  }
+});
+
 window.addEventListener("scroll", function() {
   revealElement();
+  revealUpperButton();
 });
 
 let slogan = document.querySelector(".slogan");
