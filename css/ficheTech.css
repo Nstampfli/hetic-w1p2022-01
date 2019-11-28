@@ -1,3 +1,8 @@
+.section-technique {
+  display: flex;
+  justify-content: center;
+}
+
 .technique-title {
   margin-top: 10%;
   margin-bottom: 5%;
