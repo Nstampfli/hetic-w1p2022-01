@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.ficheTech {
+.fiche-tech {
   width: 100%;
 }
 .technique {
@@ -46,7 +46,7 @@
     justify-content: space-around;
   }
 
-  .ficheTech {
+  .fiche-tech {
     width: 80%;
   }
 

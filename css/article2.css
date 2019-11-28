@@ -14,7 +14,7 @@ p {
   position: relative;
 }
 
-.iconeFleche {
+.icone-fleche {
   width: 30px;
   margin-bottom: 20px;
 }
@@ -68,7 +68,7 @@ p {
     padding: 0px 30px;
   }
 
-  .lienFleche {
+  .lien-fleche {
     position: absolute;
     transform: translateX(-45px);
     height: 40px;
@@ -76,7 +76,7 @@ p {
     border-radius: 50%;
   }
 
-  .iconeFleche {
+  .icone-fleche {
     height: 80%;
     width: 80%;
     justify-content: center;

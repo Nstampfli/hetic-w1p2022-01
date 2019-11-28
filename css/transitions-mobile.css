@@ -46,7 +46,7 @@
   transition: transform 1s, opacity 1s;
 }
 
-.ficheTech {
+.fiche-tech {
   transform: translateY(30px);
   opacity: 0;
   transition: transform 0.5s, opacity 1s;
@@ -137,7 +137,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .formCommande {
+  .form-commande {
     transform: translateX(-30px);
     opacity: 0;
     transition: transform 1s, opacity 1s;
