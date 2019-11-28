@@ -9,20 +9,11 @@ article {
   flex-direction: column;
  
 }
-
-.lienFleche {
-  position: absolute;
-  transform: translateX(-45px);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-
 .iconeFleche {
-  height: 80%;
-  width: 80%;
-  justify-content: center;
+  width: 30px;
+  margin-bottom: 20px;
 }
+
 
 aside {
   margin: 2%;
@@ -95,6 +86,20 @@ p {
     flex-direction: row;
     margin: 10%;
   }
+
+  .lienFleche {
+  position: absolute;
+  transform: translateX(-45px);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.iconeFleche {
+  height: 80%;
+  width: 80%;
+  justify-content: center;
+
 }
 
 @media (min-width: 1210px) {
