@@ -28,9 +28,26 @@ body {
 }
 
 
+<<<<<<< HEAD
+.div-elon {
+  display: none;
+}
+
+.elon {
+  float: left;
+  margin: 10px;
+  margin-right: 10px;
+}
+
+.archi {
+  float: right;
+  margin: 10px;
+  margin-left: 20px;
+=======
 .article2-wrapper {
   display: flex;
   flex-direction: column;
+>>>>>>> 683013d6a48806ee66c6950aeb8f7895007f6a9e
 }
 
 .article2-image-content {
@@ -59,7 +76,10 @@ body {
     padding: 0px 30px;
   }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 683013d6a48806ee66c6950aeb8f7895007f6a9e
 
 @media (min-width: 1024px) {
   .article2-wrapper {
