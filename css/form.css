@@ -5,6 +5,9 @@
   justify-content: center;
 }
 
+.titre-commande {
+  font-size: 35px;
+}
 .form-section h2 {
   text-align: center;
 }

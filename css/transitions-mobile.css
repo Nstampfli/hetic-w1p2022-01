@@ -1,0 +1,10 @@
+.move {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.5s 0.2s, opacity 1s 0.2s;
+}
+
+.move.is-moved {
+  transform: none;
+  opacity: 1;
+}
