@@ -12,3 +12,9 @@ function revealElement() {
 window.addEventListener("scroll", function() {
   revealElement();
 });
+
+let slogan = document.querySelector(".slogan");
+
+window.addEventListener("load", function() {
+  slogan.classList.add("is-grown");
+});
