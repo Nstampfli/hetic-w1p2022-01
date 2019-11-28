@@ -178,17 +178,23 @@ header {
   border: 6px solid white;
 }
 
-.buy-button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-}
-
-.buy-button span {
+.buy-button a {
   margin: auto;
   font-size: 1.5em;
   letter-spacing: 5px;
   font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 10px;
+}
+
+.buy-button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.buy-button:hover a {
+  color: black;
 }
 
 @media screen and (min-width: 768px) {

@@ -227,19 +227,6 @@ form h1 {
   opacity: 1;
 }
 
-.color-description {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.color-li:hover .color-description {
-  opacity: 1;
-}
-
-.is-selected .color-description {
-  opacity: 1;
-}
-
 .boutton-commande {
   font-weight: bold;
   font-size: 15px;
@@ -291,5 +278,18 @@ form h1 {
 
   .prix-total {
     margin-top: 50px;
+  }
+
+  .color-description {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .color-li:hover .color-description {
+    opacity: 1;
+  }
+
+  .is-selected .color-description {
+    opacity: 1;
   }
 }

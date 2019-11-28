@@ -28,3 +28,7 @@ h1 {
 h2 {
   font-size: 24px;
 }
+
+button {
+  letter-spacing: 10px;
+}
