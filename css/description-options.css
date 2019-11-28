@@ -11,14 +11,15 @@
   text-align: center;
 }
 
+.description div {
+  max-height: 100vh;
+}
 .description-image {
   max-width: 100%;
 }
 
 .description-image-content {
   max-width: 100%;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
 }
 
 .description-text {
@@ -27,12 +28,7 @@
   padding: 100px 0;
 }
 
-.letter-e {
-  text-transform: none;
-  font-size: 40px;
-  color: rgb(0, 128, 0);
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 970px) {
   .image-noise {
     display: none;
   }
@@ -54,7 +50,7 @@
 
   .description-text {
     position: absolute;
-    left: 10%;
+    left: 5%;
   }
 
   .text-design {
@@ -62,10 +58,10 @@
   }
 
   .text-noise {
-    top: 35%;
+    top: 30%;
   }
 
   .text-eco {
-    bottom: 5%;
+    top: 55%;
   }
 }
