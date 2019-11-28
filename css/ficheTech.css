@@ -35,10 +35,15 @@
   margin: 3%;
 }
 
+.technique-h2 {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .technique {
     display: flex;
-    width: 80%;
+    margin: 0 8%;
+    justify-content: space-around;
   }
 
   .ficheTech {
@@ -47,12 +52,12 @@
 
   .technique-flexbox-img {
     width: 80%;
+    display: flex;
   }
 
   .tech-flex-img {
     display: flex;
     width: 80%;
-    margin-top: 50%;
-    margin-left: 25%;
+    margin: auto;
   }
 }

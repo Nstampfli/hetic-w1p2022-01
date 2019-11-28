@@ -16,7 +16,19 @@ header {
   background-image: url("../img/boat-in-mouvement.jpg");
   background-repeat: no-repeat;
   background-position-x: 65%;
+  background-size: auto 100vh;
   overflow: hidden;
+}
+
+.slogan {
+  position: absolute;
+  bottom: 25%;
+  align-self: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 3px 0px 6px rgba(0, 0, 0, 0.9), -3px 0px 6px rgba(0, 0, 0, 0.9),
+    0px 3px 6px rgba(0, 0, 0, 0.9), 0px -3px 6px rgba(0, 0, 0, 0.9);
+  text-align: center;
 }
 
 .header-wrapper {
@@ -168,7 +180,7 @@ header {
   position: absolute;
   padding-top: 8px;
   width: 60%;
-  min-width: 255px;
+  min-width: 273px;
   max-width: 400px;
   height: 50px;
   bottom: 10%;
