@@ -25,7 +25,8 @@ function revealUpperButton() {
 
   menuElt.classList.toggle(
     "is-hidden",
-    window.scrollY > window.innerHeight + 10
+    window.scrollY > window.innerHeight + 10 &&
+      window.scrollY < formElement.offsetTop
   );
 }
 
