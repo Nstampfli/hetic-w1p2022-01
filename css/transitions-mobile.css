@@ -119,12 +119,14 @@
     transform: translateX(-30px);
     opacity: 0;
     transition: transform 1s, opacity 1s;
+    transition-delay: 0.3s;
   }
 
   .text-eco {
     transform: translateX(-30px);
     opacity: 0;
     transition: transform 1s, opacity 1s;
+    transition-delay: 0.6s;
   }
 
   .description-image-content {
