@@ -1,7 +1,6 @@
 .move.is-moved {
   transform: none;
   opacity: 1;
-
 }
 
 .description-text {
@@ -22,7 +21,7 @@
   transition: transform 0.5s 0.2s, opacity 1s 0.2s;
 }
 
-.ficheTech {
+.fiche-tech {
   transform: translateY(30px);
   opacity: 0;
   transition: transform 0.5s 0.2s, opacity 1s 0.2s;
@@ -114,7 +113,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .formCommande {
+  .form-commande {
     transform: translateX(-30px);
     opacity: 0;
     transition: transform 1s 0.2s, opacity 1s 0.2s;

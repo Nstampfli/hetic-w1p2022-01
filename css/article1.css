@@ -9,7 +9,7 @@ article {
   flex-direction: column;
  
 }
-.iconeFleche {
+.icone-fleche {
   width: 30px;
   margin-bottom: 20px;
 }
@@ -55,7 +55,7 @@ p {
   display: none;
 }
 
-.cargoSolaire {
+.cargo-solaire {
   float: left;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -87,7 +87,7 @@ p {
     margin: 10%;
   }
 
-  .lienFleche {
+  .lien-fleche {
   position: absolute;
   transform: translateX(-45px);
   height: 40px;
@@ -95,7 +95,7 @@ p {
   border-radius: 50%;
 }
 
-.iconeFleche {
+.icone-fleche {
   height: 80%;
   width: 80%;
   justify-content: center;
