@@ -28,6 +28,10 @@
   padding: 100px 0;
 }
 
+.description-text.text-eco {
+  padding-bottom: 25px;
+}
+
 @media screen and (min-width: 970px) {
   .image-noise {
     display: none;
