@@ -166,6 +166,7 @@ header {
   display: flex;
   align-self: center;
   position: absolute;
+  padding-top: 8px;
   width: 60%;
   min-width: 255px;
   max-width: 400px;
@@ -186,6 +187,7 @@ header {
   color: white;
   text-decoration: none;
   letter-spacing: 10px;
+  height: 40px;
 }
 
 .buy-button:hover {
@@ -194,9 +196,58 @@ header {
 }
 
 .buy-button:hover a {
+  width: 100%;
   color: black;
 }
 
+.buy-button-header {
+  display: none;
+  align-self: center;
+  position: fixed;
+  width: 30%;
+  min-width: 94px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 4px solid white;
+  top: 12px;
+  left: 40%;
+  z-index: 1;
+  padding: 5px 0;
+}
+
+.buy-button-header a {
+  margin: auto;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.buy-button-header:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.buy-button-header:hover a {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+@media screen and (min-width: 400px) {
+  .buy-button-header {
+    width: 40%;
+    left: 35%;
+    top: 8px;
+    padding: 10px 0;
+  }
+
+  .buy-button-header a {
+    letter-spacing: 10px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-wrapper {
     position: fixed;
@@ -256,6 +307,17 @@ header {
 
   .lien-menu {
     color: white;
+  }
+
+  .buy-button-header {
+    width: 25%;
+    left: 65%;
+    top: 8px;
+    padding: 10px 0;
+  }
+
+  .buy-button-header a {
+    letter-spacing: 10px;
   }
 }
 

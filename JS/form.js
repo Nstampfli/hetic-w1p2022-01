@@ -9,7 +9,7 @@ let colorSelected = document.querySelectorAll(".color-li");
 let boatColors = document.querySelectorAll(".boat-color");
 let bigBoatsColors = document.querySelectorAll(".boat-color-big");
 let moteurs = document.querySelectorAll(".puissance-moteur");
-let button = document.querySelector("button");
+let button = document.querySelector(".boutton-commande");
 
 let originalPrice = 149990;
 let price = originalPrice;
