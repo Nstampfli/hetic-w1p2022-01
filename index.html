@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300i,400,400i,500&display=swap" 
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200i,300i,400,400i,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/description-options.css" />
+    <link rel="stylesheet" href="css/description.css" />
     <link rel="stylesheet" href="css/techno.css" />
     <link rel="stylesheet" href="css/ficheTech.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <title>Tesla arch-E-mede</title>
     <script defer type="text/javascript" src="js/header.js"></script>
   </head>
@@ -25,7 +27,7 @@
         <nav id="menu" class="menu">
           <ul class="menu-list open-close">
             <li class="menu-items">
-              <a class="lien-menu" href="#">Description</a>
+              <a class="lien-menu" href="#description">Description</a>
             </li>
             <li class="menu-items">
               <a class="lien-menu" href="#techno">Technologie</a>
@@ -47,17 +49,10 @@
         /></a>
       </div>
     </header>
-    <section class="description">
-      <div class="description-wrapper">
-        <div class="description-image">
-          <img
-            class="description-image-content"
-            alt="arche-e-mede"
-            src="./img/boat_red_logo.png"
-          />
-        </div>
-        <p class="description-text">Design Futuriste</p>
-        <div class="description-image">
+    <section class="description" id="description">
+      <div class="description-design-wrapper">
+        <p class="description-text text-design">Design Futuriste</p>
+        <div class="description-image image-design">
           <img
             class="description-image-content"
             alt="arch-e-mede"
@@ -65,43 +60,64 @@
           />
         </div>
       </div>
-      <div class="description-wrapper">
-        <p class="description-text">Silencieux</p>
-        <div class="description-image">
+      <div class="description-noise-wrapper">
+        <div class="description-image image-noise">
+          <p class="description-text text-noise">ø Bruit</p>
           <img
             class="description-image-content"
             alt="arche-e-mede"
             src="img/description-noise.jpg"
           />
         </div>
-        <p class="description-text">Auto-rechargeable</p>
-    </div>
-   </section>
+      </div>
+      <p class="description-text text-eco">
+        100%<br /><span class="letter-e">e</span>-cologique
+      </p>
+    </section>
     <section class="techno" id="techno">
       <div class="techno-wrapper">
-        <div class="techno-image"> <img class="techno-image-content" src="img/solaire.png" alt=""></div>
-        <p class="techno-text">Malgré son apparence, Arch-e-mede est bien composé de panneau 
-           solaire placé à l’avant du bateau sous une couche de peinture. Ces panneau solaire
-           permettent  la production d’énergie inépuisable et non polluante. L’électricité 
-           produite est en priorité utilisée pour alimenter le moteur et le surplus non 
-           consommé est stocké dans une batterie de stockage.</p>
+        <div class="techno-image">
+          <img class="techno-image-content" src="img/solaire.png" alt="" />
+        </div>
+        <p class="techno-text">
+          Malgré son apparence, Arch-e-mede est bien composé de panneau solaire
+          placé à l’avant du bateau sous une couche de peinture. Ces panneau
+          solaire permettent la production d’énergie inépuisable et non
+          polluante. L’électricité produite est en priorité utilisée pour
+          alimenter le moteur et le surplus non consommé est stocké dans une
+          batterie de stockage.
+        </p>
       </div>
       <div class="techno-wrapper">
-        <div class="techno-image"> <img class="techno-image-content" src="img/boatautopilot.jpg" alt=""></div>
-        <p class="techno-text">Arch-e-mede est doté de la dernière version d’autopilotage.
-          Elle combine plusieurs caméras offrant une vision à 360°, mais aussi un GPS
-          satellite et un sonar, vous offrant ainsi une sécurité optimale que vous rentriez 
-          au port ou que vous naviguiez en haute mer. Le contrôle à distance du Arch-e-mede
-          est disponible par smartphone via l’application Tesla.</p>
+        <div class="techno-image">
+          <img
+            class="techno-image-content"
+            src="img/boatautopilot.jpg"
+            alt=""
+          />
+        </div>
+        <p class="techno-text">
+          Arch-e-mede est doté de la dernière version d’autopilotage. Elle
+          combine plusieurs caméras offrant une vision à 360°, mais aussi un GPS
+          satellite et un sonar, vous offrant ainsi une sécurité optimale que
+          vous rentriez au port ou que vous naviguiez en haute mer. Le contrôle
+          à distance du Arch-e-mede est disponible par smartphone via
+          l’application Tesla.
+        </p>
       </div>
       <div class="techno-wrapper">
-        <div class="techno-image"> <img class="techno-image-content" src="img/turbine.png" alt=""></div>
-        <p class="techno-text">La véritable innovation de ce bateau se cache sous sa coque.
-            Arch-e-mede est doté d’une technologie hydraulique permettant de recharger ses batteries
-            au grès de la navigation et des courants. En effet, le fond de la coque est composé 
-            d’un tunnel permettant de laisser passer l’eau, actionnant ainsi des ailettes dont la 
-            rotation créée de l'énergie. Cette dernière sera ensuite emmagasiné dans les batteries.
-            </p>
+        <div class="techno-image">
+          <img class="techno-image-content" src="img/turbine.png" alt="" />
+        </div>
+        <p class="techno-text">
+          La véritable innovation de ce bateau se cache sous sa coque.
+          Arch-e-mede est doté d’une technologie hydraulique permettant de
+          recharger ses batteries au grès de la navigation et des courants. En
+          effet, le fond de la coque est composé d’un tunnel permettant de
+          laisser passer l’eau, actionnant ainsi des ailettes dont la rotation
+          créée de l'énergie. Cette dernière sera ensuite emmagasiné dans les
+          batteries.
+        </p>
       </div>
     </section>
     <div class="technique-parentflex">
