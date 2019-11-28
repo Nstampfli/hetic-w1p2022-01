@@ -83,13 +83,14 @@ form h1 {
 
 .mail {
   position: relative;
+  margin-top: 30px;
 }
 .caracteristiques {
   margin-top: 20px;
 }
 
 .puissance-moteur {
-  color: #c4c4c4b2;
+  color: #c4c4c48a;
   display: flex;
   justify-content: space-between;
   align-items: center;

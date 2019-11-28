@@ -20,9 +20,17 @@ h2 {
 }
 
 section {
-  margin-bottom: 100px;
+  padding-top: 50px;
 }
 
-button {
+.section-article {
+  margin-bottom: 10px;
+}
+
+.description {
+  padding-top: 0px;
+}
+
+. button {
   letter-spacing: 10px;
 }
