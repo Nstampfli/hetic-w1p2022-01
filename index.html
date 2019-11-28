@@ -16,13 +16,20 @@
     <link rel="stylesheet" href="css/description-options.css" />
     <link rel="stylesheet" href="css/techno.css" />
     <link rel="stylesheet" href="css/ficheTech.css" />
+    <link rel="stylesheet" href="css/article-link.css" />
     <title>Tesla arch-E-mede</title>
     <script defer type="text/javascript" src="js/header.js"></script>
   </head>
   <body>
     <header id="up">
-      <img class="logo-arch" alt="logo-arch-e-mede" src="img/logo-arch.jpg" />
-      <a class="buy-button" href="#order"><span>ORDER NOW</span></a>
+      <img
+        class="logo-arch"
+        alt="logo-arch-e-mede"
+        src="img/LogoArchiBlack2.png"
+      />
+      <button class="buy-button">
+        <a href="#order">ORDER NOW</a>
+      </button>
       <div class="header-wrapper">
         <nav id="menu" class="menu">
           <ul class="menu-list open-close">
@@ -33,10 +40,10 @@
               <a class="lien-menu" href="#techno">Technologie</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#order">Commandez</a>
+              <a class="lien-menu" href="#order">Commander</a>
             </li>
             <li class="menu-items">
-              <a class="lien-menu" href="#">Actualités</a>
+              <a class="lien-menu" href="#article">News</a>
             </li>
           </ul>
           <div id="open-menu" class="open-menu open-close">
@@ -85,12 +92,10 @@
           <img class="techno-image-content" src="img/solaire.png" alt="" />
         </div>
         <p class="techno-text">
-          Malgré son apparence, Arch-e-mede est bien composé de panneau solaire
-          placé à l’avant du bateau sous une couche de peinture. Ces panneau
-          solaire permettent la production d’énergie inépuisable et non
-          polluante. L’électricité produite est en priorité utilisée pour
-          alimenter le moteur et le surplus non consommé est stocké dans une
-          batterie de stockage.
+          Malgré son apparence, Arch-e-mede est bien composé de panneaux
+          solaires placés à l’avant du bateau sous une couche de peinture. Ces
+          panneaux solaires permettent la production d’énergie inépuisable et
+          non polluante.
         </p>
       </div>
       <div class="techno-wrapper">
@@ -102,12 +107,12 @@
           />
         </div>
         <p class="techno-text">
-          Arch-e-mede est doté de la dernière version d’autopilotage. Elle
+          Arch-e-mede est doté de la dernière version d’autopilotage Tesla. Elle
           combine plusieurs caméras offrant une vision à 360°, mais aussi un GPS
-          satellite et un sonar, vous offrant ainsi une sécurité optimale que
-          vous rentriez au port ou que vous naviguiez en haute mer. Le contrôle
-          à distance du Arch-e-mede est disponible par smartphone via
-          l’application Tesla.
+          satellite et un sonar, pour une sécurité optimale. Le contrôle à
+          distance d'Arch-e-mede est disponible par smartphone via l’application
+          Tesla.
+
         </p>
       </div>
       <div class="techno-wrapper">
@@ -116,68 +121,70 @@
         </div>
         <p class="techno-text">
           La véritable innovation de ce bateau se cache sous sa coque.
-          Arch-e-mede est doté d’une technologie hydraulique permettant de
-          recharger ses batteries au grès de la navigation et des courants. En
-          effet, le fond de la coque est composé d’un tunnel permettant de
-          laisser passer l’eau, actionnant ainsi des ailettes dont la rotation
-          créée de l'énergie. Cette dernière sera ensuite emmagasiné dans les
-          batteries.
+
+          Arch-e-mede est doté d’une technologie hydraulique permettant de créer
+          de l'énergie même à l'arrêt, et par conséquent de recharger les
+          batteries au gré de la navigation et des courants.
+
         </p>
       </div>
     </section>
-    <div class="technique-parentflex">
-      <h2 class="technique-title">Fiche technique</h2>
-      <div class="ficheTech">
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Longueur hors tout</div>
-          <div class="technique-title-number">6,64m</div>
+    <section class="section-technique">
+      <div class="technique">
+        <div class="ficheTech">
+          <h2>Fiche technique</h2>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Longueur hors tout</div>
+            <div class="technique-title-number">6,64m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Longueur de coque</div>
+            <div class="technique-title-number">6,23m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Longueur de flotaison</div>
+            <div class="technique-title-number">6,16m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">largeur maxi</div>
+            <div class="technique-title-number">2,55m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Tirant d'eau</div>
+            <div class="technique-title-number">1,60m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">
+              Diamètre maxi des flotteurs
+            </div>
+            <div class="technique-title-number">6,15m</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Puissance maxi</div>
+            <div class="technique-title-number">400 Chv</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Puissance mini</div>
+            <div class="technique-title-number">200 Chv</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Puissance intermediaire</div>
+            <div class="technique-title-number">320 Chv</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Poids sans moteur</div>
+            <div class="technique-title-number">644 kg</div>
+          </div>
+          <div class="technique-flexbox">
+            <div class="technique-title-caract">Garantie</div>
+            <div class="technique-title-number">5 ans</div>
+          </div>
         </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Longueur de coque</div>
-          <div class="technique-title-number">6,23m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Longueur de flotaison</div>
-          <div class="technique-title-number">6,16m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">largeur maxi</div>
-          <div class="technique-title-number">2,55</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Tirant d'eau</div>
-          <div class="technique-title-number">1,60m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Diamètre maxi des flotteurs</div>
-          <div class="technique-title-number">6,15m</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Puissance maxi</div>
-          <div class="technique-title-number">400 Chv</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Puissance mini</div>
-          <div class="technique-title-number">200 Chv</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Puissance intermediaire</div>
-          <div class="technique-title-number">320 Chv</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Poids sans moteur</div>
-          <div class="technique-title-number">644 kg</div>
-        </div>
-        <div class="technique-flexbox">
-          <div class="technique-title-caract">Garantie</div>
-          <div class="technique-title-number">5 ans</div>
+        <div class="technique-flexbox-img">
+          <img class="tech-flex-img" src="./img/3d boat.png" alt="" />
         </div>
       </div>
-      <div class="technique-image">
-        <img src="/img/boatguiverti.png" alt="boat_3d" />
-      </div>
-    </div>
-    <hr class="separation" />
+    </section>
     <section class="form-section" id="order">
       <div class="form-overlay">
         <p class="alert-ok">
@@ -222,7 +229,7 @@
           </div>
 
           <div class="color-choice">
-            <h2>Couleurs aux choix</h2>
+            <h2>Couleur au choix</h2>
             <ul class="colors">
               <li class="color-li is-selected">
                 <img class="color-sample " src="img/colors/color-black.png" />
@@ -290,6 +297,44 @@
         </div>
       </div>
     </section>
+    <section id="article">
+      <div class="article-presentation-conteneur">
+        <span class="article-news">NEWS</span>
+        <span class="suiv">suiv ></span>
+        <span class="prec">< Préc</span>
+        <div class="article-here">
+          <div class="article-presentation-content">
+            <img class="article-presentation-image" src="img/cargo.jpg" />
+
+            <span class="article-head">Fret maritime et pollution</span>
+            <span class="article-description"
+              >Le poids du fret maritime est sans cesse croissant sur la
+              pollution mondiale</span
+            >
+            <button class="article-link">
+              <a href="article1.html" target="blank">LIRE</a>
+            </button>
+          </div>
+        </div>
+        <div class="article-here is-hidden">
+          <div class="article-presentation-content">
+            <img
+              class="article-presentation-image"
+              src="img/article2-presentation.jpg"
+            />
+
+            <span class="article-head">Tesla innove en haute mer</span>
+            <span class="article-description"
+              >Les nouvelles mannes de Musk:<br />
+              Click n' Boat & Taxi Boat</span
+            >
+            <button class="article-link">
+              <a href="article2.html" target="blank">LIRE</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <ul class="footerbox">
         <li>
@@ -314,20 +359,27 @@
         </li>
       </ul>
       <div class="footerbox">
-        <a href="https://www.instagram.com/teslamotors/?hl=fr">
-          <img class="footerlogo" src="img/logoinsta.png" alt=""
+        <a
+          class="footerlogo"
+          href="https://www.instagram.com/teslamotors/?hl=fr"
+        >
+          <img src="img/logoinsta.png" alt=""
         /></a>
-        <a href="https://twitter.com/tesla?lang=fr"
-          ><img class="footerlogo" src="img/logotwitter.png" alt=""
+        <a class="footerlogo" href="https://twitter.com/tesla?lang=fr"
+          ><img src="img/logotwitter.png" alt=""
         /></a>
-        <a href="https://www.facebook.com/TeslaMoto/"
-          ><img class="footerlogo" src="img/logofb.png" alt=""
+        <a class="footerlogo" href="https://www.facebook.com/TeslaMoto/"
+          ><img src="img/logofb.png" alt=""
         /></a>
-        <a href="https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ">
-          <img class="footerlogo" src="img/logoytb.png" alt="" />
+        <a
+          class="footerlogo"
+          href="https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ"
+        >
+          <img src="img/logoytb.png" alt="" />
         </a>
       </div>
     </footer>
     <script type="text/javascript" src="JS/form.js"></script>
+    <script type="text/javascript" src="JS/article.js"></script>
   </body>
 </html>
