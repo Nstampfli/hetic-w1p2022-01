@@ -13,12 +13,21 @@ let button = document.querySelector(".boutton-commande");
 
 let originalPrice = 149990;
 let price = originalPrice;
+let priceAffiche;
 let result = false;
 let memo = document.querySelector(".is-selected");
 let prevMoteur = document.querySelector(".moteur-selected");
 let colorChoice = false;
 
-priceElement.innerHTML = price + " €";
+function priceToString(x) {
+  let priceString = x.toString();
+  let pricetab = priceString.split("");
+  pricetab.splice(-3, 0, " ");
+  priceAffiche = pricetab.join("");
+}
+priceToString(price);
+
+priceElement.innerHTML = priceAffiche + " €";
 
 function isValid(element, condition) {
   var parent = element.parentNode;
@@ -49,7 +58,9 @@ for (let moteur of moteurs) {
     prevMoteur = moteur;
 
     let newPrice = Number(moteur.getAttribute("data-price")) + price;
-    priceElement.innerHTML = newPrice + "€";
+    priceToString(newPrice);
+
+    priceElement.innerHTML = priceAffiche + " €";
   });
 }
 
