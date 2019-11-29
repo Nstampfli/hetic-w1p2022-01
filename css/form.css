@@ -1,3 +1,17 @@
+@keyframes wrong-move {
+  25% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  75% {
+    transform: translateX(30px);
+  }
+  to {
+    transform: none;
+  }
+}
 .form-section {
   width: 100%;
   height: auto;
@@ -85,6 +99,11 @@ form h1 {
   position: relative;
   margin-top: 30px;
 }
+
+.mail.is-not-valid {
+  animation: wrong-move 0.3s;
+}
+
 .caracteristiques {
   margin-top: 20px;
 }

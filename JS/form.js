@@ -47,7 +47,8 @@ function resetForm(element) {
   element.parentNode.classList.remove("is-valid");
 }
 
-mail.addEventListener("blur", function() {
+mail.addEventListener("blur", function(e) {
+  e.preventDefault();
   isValid(mail, /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i.test(mail.value));
 });
 
