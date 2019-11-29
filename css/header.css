@@ -47,7 +47,7 @@ header {
 
 .logo-tesla {
   position: fixed;
-  top: -3%;
+  top: -2.5%;
   left: 5%;
   width: 90px;
   height: 60px;
@@ -187,7 +187,6 @@ header {
   display: flex;
   align-self: center;
   position: absolute;
-  padding-top: 8px;
   width: 60%;
   min-width: 300px;
   max-width: 400px;
@@ -195,60 +194,52 @@ header {
   bottom: 10%;
   text-align: center;
   text-decoration: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 6px solid white;
-  letter-spacing: 5px;
 }
 
-.buy-button a {
-  margin: auto;
-  font-size: 1.5em;
-  font-weight: bolder;
+.buy-button button {
   color: white;
-  text-decoration: none;
-  letter-spacing: 10px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.3em;
+  background: none;
+  border: 4px solid white;
 }
 
 .buy-button:hover {
-  cursor: pointer;
   background-color: white;
 }
 
-.buy-button:hover a {
-  width: 100%;
+.buy-button button:hover {
   color: black;
+  cursor: pointer;
 }
 
 .buy-button-header {
   display: none;
   align-self: center;
   position: fixed;
-  width: 30%;
-  min-width: 94px;
+  width: 35%;
+  min-width: 120px;
   height: 30px;
   text-align: center;
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 4px solid white;
   top: 15px;
-  left: 40%;
+  left: 38%;
   z-index: 1;
-  padding: 5px 0;
+  text-decoration: none;
 }
 
 .buy-button-header.pop {
   display: flex;
 }
-.buy-button-header a {
-  margin: auto;
-  font-weight: bolder;
+.buy-button-header button {
+  letter-spacing: normal;
   color: white;
-  text-decoration: none;
-  letter-spacing: 0;
-  font-size: 0.7em;
+  width: 100%;
+  height: 100%;
+  background: none;
+  font-weight: bold;
+  border: 4px solid white;
 }
 
 .buy-button-header:hover {
@@ -256,10 +247,9 @@ header {
   background-color: white;
 }
 
-.buy-button-header:hover a {
-  width: 100%;
-  height: 100%;
+.buy-button-header:hover button {
   color: black;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 400px) {
@@ -267,8 +257,8 @@ header {
     letter-spacing: 10px;
   }
 
-  .buy-button-header a {
-    font-size: 1em;
+  .buy-button-header button {
+    font-size: 0.9em;
   }
 }
 
