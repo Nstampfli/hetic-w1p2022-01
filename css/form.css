@@ -144,6 +144,7 @@ form h1 {
   width: 15%;
   max-width: 50px;
   cursor: pointer;
+  align-items: center;
 }
 
 .color-sample {
