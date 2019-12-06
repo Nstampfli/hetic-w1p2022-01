@@ -1,0 +1,1 @@
+sshpass -p hetic scp -r ../hetic-w1p2022-01/* tp@163.172.172.180:/home/tp/paquier-bastien
