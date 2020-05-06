@@ -1,15 +1,20 @@
-# hetic-w1p2022-01 Projet Semaine Intensive Intégration
+# Arch-e-Mede
+ Projet de semaine intensive d'intégration :whale: :
+ 
+https://arch-e-mede.netlify.com/
 
-Membres du groupe :
+## Sujet :wrench: :
+Création d’un nouveau produit technologique et de son site internet
 
-<ul>
-  <li>Bastien Paquier</li>
-  <li>Constance Pétillot</li>
-  <li>Guillaume Rak-Lecler</li>
-  <li>Quentin Trouvé</li>
-  <li>Annie Tran</li>
-  <li>Michael Vieira</li>
-  <li>Nathan Stampfli</li>
-</ul>
 
-Lien du site Netlify : https://arch-e-mede.netlify.com/
+## Contributors :construction_worker: :
+
+ - Bastien Paquier
+ - Constance Pétillot
+ - Guillaume Rak-Lecler
+ - Nathan Stampfli
+ - Quentin Trouvé
+ - Annie Tran
+ - Michael Vieira
+
+
